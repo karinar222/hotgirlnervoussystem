@@ -1,0 +1,2000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Hot Girl Nervous System Reset</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fdf0fa;
+  --bg2:#f8e8f5;
+  --bg3:#f0dff0;
+  --card:rgba(255,255,255,0.55);
+  --card-h:rgba(255,255,255,0.75);
+  --border:rgba(200,150,210,0.18);
+  --border-glow:rgba(230,100,200,0.38);
+
+  --txt:#2d1a35;
+  --txt2:rgba(45,26,53,0.68);
+  --txt3:rgba(45,26,53,0.42);
+
+  --rose:#e879ba;
+  --mauve:#c084e8;
+  --sky:#90c8e8;
+  --peach:#f8b8d8;
+  --mint:#90e0c8;
+  --lilac:#b8a0e0;
+  --pink2:#f0a0d0;
+
+  --grad:linear-gradient(135deg,#f8c0e0 0%,#c8a0e8 40%,#90c8e8 80%,#a0e8d0 100%);
+  --grad-soft:linear-gradient(135deg,rgba(248,192,224,.22),rgba(200,160,232,.18),rgba(144,200,232,.18),rgba(160,232,208,.15));
+  --grad-btn:linear-gradient(135deg,#e879ba 0%,#c084e8 45%,#90c8e8 80%,#7eecd4 100%);
+  --grad-txt:linear-gradient(135deg,#e879ba,#c084e8,#90c8e8);
+  --grad-hero:linear-gradient(160deg,#fce8f5 0%,#eeddf8 30%,#dceef8 60%,#ddf5ef 100%);
+  --glow:0 8px 40px rgba(232,121,186,.22);
+  --glow2:0 8px 32px rgba(192,132,232,.18);
+
+  --serif:'Playfair Display',Georgia,serif;
+  --sans:'DM Sans',-apple-system,sans-serif;
+  --mono:'DM Mono',monospace;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--bg);color:var(--txt);overflow-x:hidden;-webkit-font-smoothing:antialiased;line-height:1.6;min-height:100vh}
+
+/* ── FLUID BACKGROUND ── */
+.bg-canvas{position:fixed;inset:0;z-index:-2;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(80px);opacity:.55;animation:blobDrift 18s infinite ease-in-out}
+.blob1{width:70vw;height:70vw;background:radial-gradient(circle,#f8c0e0,#e8a0d0);top:-20%;left:-20%;animation-delay:0s}
+.blob2{width:60vw;height:60vw;background:radial-gradient(circle,#c8a0e8,#b090d8);top:10%;right:-20%;animation-delay:-6s}
+.blob3{width:55vw;height:55vw;background:radial-gradient(circle,#90c8e8,#a0d8f0);bottom:10%;left:10%;animation-delay:-12s}
+.blob4{width:45vw;height:45vw;background:radial-gradient(circle,#a0e8d0,#80d8c0);bottom:-10%;right:5%;animation-delay:-4s}
+.blob5{width:40vw;height:40vw;background:radial-gradient(circle,#f8b8d8,#f090c0);top:45%;left:35%;animation-delay:-9s}
+@keyframes blobDrift{
+  0%{transform:translate(0,0) scale(1)}
+  33%{transform:translate(3%,5%) scale(1.06)}
+  66%{transform:translate(-4%,2%) scale(.96)}
+  100%{transform:translate(0,0) scale(1)}
+}
+.bg-overlay{position:fixed;inset:0;z-index:-1;background:rgba(255,255,255,.28)}
+
+/* ── NAV ── */
+.nav{display:flex;align-items:center;justify-content:space-between;padding:16px 36px;position:sticky;top:0;background:rgba(253,240,250,.82);backdrop-filter:blur(28px);border-bottom:1px solid var(--border);z-index:50}
+.nav-brand{display:flex;align-items:center;gap:12px;cursor:pointer}
+.nav-logo{width:40px;height:40px;background:var(--grad-btn);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:18px;box-shadow:var(--glow)}
+.nav-name{font-family:var(--serif);font-size:15px;font-weight:600}
+.nav-name em{font-style:italic;background:var(--grad-txt);-webkit-background-clip:text;background-clip:text;color:transparent}
+.nav-links{display:flex;gap:4px;align-items:center}
+@media(max-width:960px){.nav-links{display:none}}
+.nav-btn{font-family:var(--mono);font-size:10px;letter-spacing:1.8px;text-transform:uppercase;color:var(--txt2);padding:8px 13px;border-radius:20px;border:none;background:transparent;cursor:pointer;transition:all .3s}
+.nav-btn:hover{background:rgba(232,121,186,.1);color:var(--txt)}
+.nav-btn.hot{background:var(--grad-btn);color:#fff;box-shadow:0 4px 20px rgba(232,121,186,.35)}
+.nav-btn.hot:hover{transform:translateY(-1px);box-shadow:0 6px 28px rgba(232,121,186,.5)}
+.mob-btn{display:none;background:rgba(255,255,255,.5);border:1px solid var(--border);color:var(--txt);padding:8px 14px;border-radius:20px;cursor:pointer;font-family:var(--mono);font-size:10px;letter-spacing:1px;backdrop-filter:blur(10px)}
+@media(max-width:960px){.mob-btn{display:block}}
+.mob-panel{position:fixed;inset:0;background:rgba(253,240,250,.97);backdrop-filter:blur(24px);z-index:200;display:none;flex-direction:column;padding:72px 32px 32px;gap:10px}
+.mob-panel.open{display:flex}
+.mob-close{position:absolute;top:18px;right:18px;width:40px;height:40px;background:rgba(232,121,186,.15);border:1px solid var(--border);border-radius:50%;color:var(--txt);cursor:pointer;font-size:20px;display:flex;align-items:center;justify-content:center}
+
+/* ── TICKER ── */
+.ticker{background:var(--grad-btn);overflow:hidden;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.3);position:relative;z-index:51}
+.ticker-track{display:flex;gap:56px;white-space:nowrap;animation:tickerRun 42s linear infinite;width:max-content}
+.ticker:hover .ticker-track{animation-play-state:paused}
+.ticker-item{font-family:var(--mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#fff;display:inline-flex;align-items:center;gap:12px}
+.ticker-item::after{content:"✦";opacity:.6;margin-left:56px}
+@keyframes tickerRun{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ── HERO ── */
+.hero{max-width:860px;margin:0 auto;padding:72px 36px 52px;text-align:center}
+.hero-tag{font-family:var(--mono);font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--rose);margin-bottom:20px;display:flex;align-items:center;justify-content:center;gap:10px}
+.hero-tag::before,.hero-tag::after{content:"✦";color:var(--mauve);font-size:9px}
+.hero-h1{font-family:var(--serif);font-size:clamp(42px,6.5vw,80px);font-weight:600;line-height:1.05;letter-spacing:-2px;margin-bottom:24px;color:var(--txt)}
+.hero-h1 em{font-style:italic;font-weight:700;background:var(--grad-txt);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-sub{font-size:17px;color:var(--txt2);max-width:580px;margin:0 auto 38px;line-height:1.75}
+.chips{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:50px}
+.chip{font-family:var(--mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--txt2);padding:9px 16px;border:1px solid var(--border);border-radius:30px;background:rgba(255,255,255,.5);display:flex;align-items:center;gap:7px;backdrop-filter:blur(10px)}
+.chip::before{content:"✦";color:var(--rose);font-size:8px}
+
+/* ── PATH CARDS ── */
+.path-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1060px;margin:0 auto}
+@media(max-width:820px){.path-grid{grid-template-columns:1fr}}
+.path-card{background:rgba(255,255,255,.52);border:1px solid rgba(232,121,186,.18);border-radius:22px;padding:28px 24px;cursor:pointer;transition:all .4s;position:relative;overflow:hidden;backdrop-filter:blur(20px);text-align:left;box-shadow:0 4px 24px rgba(200,150,220,.12)}
+.path-card::before{content:"";position:absolute;inset:0;background:var(--grad-soft);opacity:0;transition:opacity .4s;pointer-events:none}
+.path-card:hover{border-color:rgba(232,121,186,.4);transform:translateY(-4px);box-shadow:0 16px 40px rgba(232,121,186,.2)}
+.path-card:hover::before{opacity:1}
+.path-card>*{position:relative;z-index:1}
+.path-ico{width:48px;height:48px;background:var(--grad-btn);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:16px;box-shadow:0 6px 20px rgba(232,121,186,.28)}
+.path-eyebrow{font-family:var(--mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--rose);margin-bottom:7px}
+.path-title{font-family:var(--serif);font-size:20px;font-weight:600;margin-bottom:8px;letter-spacing:-.3px;line-height:1.2;color:var(--txt)}
+.path-desc{color:var(--txt2);font-size:13px;margin-bottom:16px;line-height:1.6}
+.path-pill{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:var(--txt2);padding:8px 16px;background:rgba(255,255,255,.6);border:1px solid var(--border);border-radius:30px;transition:all .3s}
+.path-card:hover .path-pill{background:var(--grad-btn);border-color:transparent;color:#fff}
+
+/* ── DAILY WIDGET ── */
+.daily{background:linear-gradient(135deg,rgba(248,192,224,.25),rgba(200,160,232,.2),rgba(144,200,232,.18));border:1px solid rgba(232,121,186,.28);border-radius:24px;padding:34px;margin:42px auto 0;max-width:860px;display:grid;grid-template-columns:1fr auto;gap:26px;align-items:center;box-shadow:0 8px 40px rgba(232,121,186,.14);position:relative;overflow:hidden;backdrop-filter:blur(20px);cursor:pointer}
+@media(max-width:680px){.daily{grid-template-columns:1fr;padding:24px}}
+.daily::before{content:"";position:absolute;top:-40%;right:-20%;width:320px;height:320px;background:radial-gradient(circle,rgba(232,121,186,.14),transparent 70%);pointer-events:none}
+.daily>*{position:relative;z-index:1}
+.daily-eyebrow{font-family:var(--mono);font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--rose);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.daily-eyebrow::before{content:"✦"}
+.daily-title{font-family:var(--serif);font-size:24px;font-weight:600;letter-spacing:-.4px;line-height:1.2;margin-bottom:6px;color:var(--txt)}
+.daily-title em{font-style:italic;background:var(--grad-txt);-webkit-background-clip:text;background-clip:text;color:transparent}
+.daily-desc{color:var(--txt2);font-size:14px;line-height:1.65;margin-bottom:14px}
+.daily-meta{display:flex;gap:12px;font-family:var(--mono);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--txt3);flex-wrap:wrap}
+
+/* ── SECTION ── */
+.section{padding:72px 0}
+.container{max-width:1260px;margin:0 auto;padding:0 36px}
+@media(max-width:680px){.container{padding:0 18px}.section{padding:52px 0}}
+.sec-head{text-align:center;margin-bottom:42px}
+.sec-eyebrow{font-family:var(--mono);font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--mauve);margin-bottom:12px;display:flex;justify-content:center;gap:8px}
+.sec-eyebrow::before,.sec-eyebrow::after{content:"✦";color:var(--rose)}
+.sec-h2{font-family:var(--serif);font-size:clamp(28px,4vw,46px);font-weight:600;letter-spacing:-.8px;line-height:1.1;margin-bottom:13px;color:var(--txt)}
+.sec-h2 em{font-style:italic;background:var(--grad-txt);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sec-sub{color:var(--txt2);max-width:560px;margin:0 auto;font-size:15px;line-height:1.7}
+
+/* ── SEARCH + FILTER ── */
+.search-wrap{max-width:440px;margin:0 auto 18px;position:relative}
+.search-wrap input{width:100%;padding:13px 18px 13px 44px;background:rgba(255,255,255,.6);border:1px solid var(--border);border-radius:14px;color:var(--txt);font-family:var(--sans);font-size:14px;transition:all .3s;backdrop-filter:blur(12px)}
+.search-wrap input:focus{outline:none;border-color:rgba(232,121,186,.45);background:rgba(255,255,255,.8)}
+.search-wrap input::placeholder{color:var(--txt3)}
+.search-wrap svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);width:17px;height:17px;color:var(--txt3)}
+.filter-bar{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:28px}
+.filter-btn{font-family:var(--mono);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--txt2);padding:9px 16px;border:1px solid var(--border);border-radius:30px;background:rgba(255,255,255,.5);cursor:pointer;transition:all .3s;white-space:nowrap;backdrop-filter:blur(10px)}
+.filter-btn:hover{border-color:rgba(232,121,186,.4);color:var(--txt)}
+.filter-btn.active{background:var(--grad-btn);border-color:transparent;color:#fff;box-shadow:0 4px 18px rgba(232,121,186,.32)}
+.filter-count{opacity:.55;margin-left:5px;font-size:9px}
+
+/* ── SESSION GRID ── */
+.session-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(285px,1fr));gap:16px}
+.session-card{background:rgba(255,255,255,.52);border:1px solid rgba(232,121,186,.14);border-radius:20px;padding:22px;cursor:pointer;transition:all .3s;position:relative;overflow:hidden;backdrop-filter:blur(18px);display:flex;flex-direction:column;gap:11px;min-height:220px;box-shadow:0 2px 16px rgba(200,150,220,.1)}
+.session-card::before{content:"";position:absolute;inset:0;background:var(--grad-soft);opacity:0;transition:opacity .3s;pointer-events:none}
+.session-card:hover{border-color:rgba(232,121,186,.38);transform:translateY(-3px);box-shadow:0 12px 36px rgba(232,121,186,.18)}
+.session-card:hover::before{opacity:1}
+.session-card>*{position:relative;z-index:1}
+.card-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.card-cat{font-family:var(--mono);font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--rose);padding:4px 10px;border:1px solid rgba(232,121,186,.28);border-radius:20px;background:rgba(232,121,186,.08);white-space:nowrap}
+.fav-btn{background:transparent;border:none;color:var(--txt3);cursor:pointer;padding:3px;transition:color .3s}
+.fav-btn:hover,.fav-btn.on{color:var(--rose)}
+.fav-btn svg{width:17px;height:17px}
+.card-title{font-family:var(--serif);font-size:18px;font-weight:600;line-height:1.25;letter-spacing:-.2px;color:var(--txt)}
+.card-desc{color:var(--txt2);font-size:13px;line-height:1.55;flex:1}
+.card-meta{display:flex;gap:12px;font-family:var(--mono);font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--txt3);padding-top:11px;border-top:1px solid rgba(200,150,220,.15);flex-wrap:wrap}
+
+/* ── MODAL BASE ── */
+.overlay{position:fixed;inset:0;background:rgba(45,26,53,.55);backdrop-filter:blur(22px);z-index:100;display:none;align-items:flex-start;justify-content:center;padding:32px 18px;overflow-y:auto}
+.overlay.open{display:flex;animation:fadeIn .3s ease}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.modal{background:linear-gradient(160deg,#fdf4fb 0%,#f5ecfc 50%,#ecf4fc 100%);border:1px solid rgba(232,121,186,.28);border-radius:26px;width:100%;position:relative;box-shadow:0 30px 80px rgba(100,50,120,.2),0 0 60px rgba(232,121,186,.1);animation:slideUp .4s ease;margin:auto}
+@keyframes slideUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+.modal-close{position:absolute;top:16px;right:16px;width:38px;height:38px;background:rgba(232,121,186,.12);border:1px solid rgba(232,121,186,.2);border-radius:50%;color:var(--txt);cursor:pointer;font-size:19px;display:flex;align-items:center;justify-content:center;transition:all .3s;z-index:10}
+.modal-close:hover{background:var(--grad-btn);border-color:transparent;color:#fff;transform:rotate(90deg)}
+
+/* ── SESSION PLAYER ── */
+#sessionModal .modal{max-width:1000px}
+.player-hero{background:var(--grad-soft);border-bottom:1px solid rgba(232,121,186,.15);padding:32px 44px;border-radius:26px 26px 0 0;position:relative;overflow:hidden}
+.player-hero::after{content:"";position:absolute;bottom:-30px;right:-30px;width:200px;height:200px;background:radial-gradient(circle,rgba(232,121,186,.14),transparent 70%);pointer-events:none}
+.player-cat{font-family:var(--mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--rose);margin-bottom:8px}
+.player-title{font-family:var(--serif);font-size:30px;font-weight:600;letter-spacing:-.5px;line-height:1.15;margin-bottom:8px;max-width:88%;color:var(--txt)}
+.player-for{color:var(--txt2);font-size:14px;line-height:1.65;max-width:88%}
+.player-body{padding:36px 44px 44px}
+@media(max-width:680px){.player-hero{padding:24px 20px}.player-body{padding:24px 20px}.player-title{font-size:22px;max-width:100%}}
+
+/* Mode toggles */
+.mode-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px;padding-bottom:16px;border-bottom:1px solid rgba(200,150,220,.18);align-items:center}
+.mode-label{font-family:var(--mono);font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--txt3);align-self:center}
+.mode-tog{font-family:var(--mono);font-size:9px;letter-spacing:1.5px;text-transform:uppercase;padding:7px 13px;border-radius:20px;cursor:pointer;transition:all .3s;background:rgba(255,255,255,.5);border:1px solid var(--border);color:var(--txt2)}
+.mode-tog:hover{border-color:rgba(232,121,186,.38);color:var(--txt)}
+.mode-tog.active{background:var(--grad-btn);border-color:transparent;color:#fff}
+
+/* Pre-rating */
+.pre-rating{background:rgba(255,255,255,.5);border:1px solid rgba(200,150,220,.2);border-radius:14px;padding:16px 20px;margin-bottom:20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;backdrop-filter:blur(10px)}
+.pre-label{font-family:var(--mono);font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--txt2);flex:1;min-width:150px}
+.pre-val{font-family:var(--serif);font-size:24px;font-weight:700;background:var(--grad-txt);-webkit-background-clip:text;background-clip:text;color:transparent;min-width:34px}
+.pre-rating input[type=range]{flex:2;min-width:150px;-webkit-appearance:none;height:4px;background:var(--grad);border-radius:2px;outline:none}
+.pre-rating input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;background:#fff;border-radius:50%;cursor:pointer;box-shadow:0 0 0 3px rgba(232,121,186,.35),0 2px 8px rgba(0,0,0,.1)}
+.pre-rating input[type=range]::-moz-range-thumb{width:18px;height:18px;background:#fff;border-radius:50%;cursor:pointer;border:none;box-shadow:0 0 0 3px rgba(232,121,186,.35)}
+
+/* Setup */
+.setup-box{background:linear-gradient(135deg,rgba(200,160,232,.12),rgba(144,200,232,.1));border:1px solid rgba(192,132,232,.25);border-radius:14px;padding:16px 20px;margin-bottom:24px}
+.setup-eyebrow{font-family:var(--mono);font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--mauve);margin-bottom:8px}
+.setup-text{font-family:var(--serif);font-size:15px;font-style:italic;line-height:1.6;color:var(--txt)}
+
+/* ── TAP MAP + SCRIPT ── */
+.tap-layout{display:grid;grid-template-columns:252px 1fr;gap:26px;margin-bottom:20px}
+@media(max-width:680px){.tap-layout{grid-template-columns:1fr}}
+
+/* Body map card */
+.map-card{background:rgba(255,255,255,.55);border:1px solid rgba(200,150,220,.2);border-radius:20px;padding:20px;position:sticky;top:88px;align-self:start;backdrop-filter:blur(16px);box-shadow:0 4px 20px rgba(200,150,220,.1)}
+.map-card-title{font-family:var(--mono);font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--rose);margin-bottom:12px;text-align:center}
+
+.body-svg-wrap svg{width:100%;max-width:200px;display:block;margin:0 auto}
+
+/* Tap point circles */
+.tp{fill:rgba(232,121,186,.2);stroke:var(--rose);stroke-width:1.5;cursor:pointer;transition:all .3s}
+.tp:hover{fill:rgba(232,121,186,.45)}
+.tp.active{fill:var(--rose);stroke:#fff;stroke-width:2;filter:drop-shadow(0 0 8px rgba(232,121,186,.8));animation:tpPulse 1.4s infinite ease-in-out}
+@keyframes tpPulse{0%,100%{r:6;opacity:1}50%{r:8.5;opacity:.8}}
+
+/* Map info panel */
+.map-info{margin-top:14px;padding-top:12px;border-top:1px solid rgba(200,150,220,.18);min-height:80px}
+.map-info-name{font-family:var(--serif);font-size:16px;font-weight:600;margin-bottom:3px;color:var(--txt)}
+.map-info-meridian{font-family:var(--mono);font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--rose);margin-bottom:6px}
+.map-info-body{font-size:11px;color:var(--txt2);line-height:1.55}
+
+/* Script */
+.script-h3{font-family:var(--serif);font-size:19px;font-weight:600;margin-bottom:13px;letter-spacing:-.3px;color:var(--txt)}
+.round{display:flex;gap:11px;padding:10px 0;border-bottom:1px solid rgba(200,150,220,.15);align-items:flex-start;transition:all .3s;cursor:pointer}
+.round:last-child{border-bottom:none}
+.round:hover{padding-left:10px;padding-right:10px;margin:0 -10px;background:rgba(255,255,255,.4);border-radius:8px}
+.round.current{padding-left:13px;padding-right:13px;margin:0 -13px;background:rgba(232,121,186,.08);border-radius:12px;border-left:3px solid var(--rose);border-bottom-color:transparent}
+.round.done{opacity:.4}
+.round-pt{font-family:var(--mono);font-size:9px;letter-spacing:1.2px;text-transform:uppercase;color:var(--rose);padding:4px 9px;background:rgba(232,121,186,.1);border-radius:20px;white-space:nowrap;flex-shrink:0;min-width:90px;text-align:center}
+.round-txt{color:var(--txt);font-size:14px;line-height:1.55;flex:1}
+
+/* Guide bar */
+.guide-bar{position:sticky;bottom:0;background:linear-gradient(180deg,rgba(253,240,250,.4) 0%,rgba(253,240,250,.95) 40%);padding:16px 0 8px;display:flex;gap:9px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-top:20px;z-index:5}
+.guide-bar.live{background:linear-gradient(135deg,rgba(248,192,224,.2),rgba(144,200,232,.15));border:1px solid rgba(232,121,186,.3);border-radius:16px;padding:13px 16px;backdrop-filter:blur(16px)}
+.guide-status{font-family:var(--mono);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--txt2)}
+.guide-status strong{color:var(--txt)}
+.guide-ctrls{display:flex;gap:8px;flex-wrap:wrap}
+.ctrl-btn{background:rgba(255,255,255,.6);border:1px solid var(--border);color:var(--txt);padding:9px 16px;border-radius:30px;font-family:var(--sans);font-weight:600;font-size:12px;cursor:pointer;transition:all .3s;backdrop-filter:blur(10px)}
+.ctrl-btn:hover{border-color:rgba(232,121,186,.4);background:rgba(232,121,186,.1)}
+.ctrl-btn.primary{background:var(--grad-btn);border-color:transparent;color:#fff;box-shadow:0 4px 14px rgba(232,121,186,.3)}
+.ctrl-btn:disabled{opacity:.35;cursor:not-allowed}
+
+/* Post rating + log */
+.post-box{margin-top:26px;padding:20px;background:rgba(144,224,200,.08);border:1px solid rgba(126,236,212,.25);border-radius:16px}
+.post-box h4{font-family:var(--serif);font-size:18px;font-weight:600;margin-bottom:5px;color:var(--txt)}
+.post-box p{color:var(--txt2);font-size:13px;margin-bottom:13px}
+.log-btn{width:100%;background:rgba(126,236,212,.12);border:1px solid rgba(126,236,212,.3);color:#3aa88a;padding:12px 18px;border-radius:12px;font-family:var(--sans);font-weight:600;font-size:13px;cursor:pointer;transition:all .3s;display:flex;align-items:center;justify-content:center;gap:7px;margin-top:11px}
+.log-btn:hover{background:rgba(126,236,212,.2)}
+.log-btn.saved{background:var(--mint);color:var(--txt);border-color:var(--mint)}
+
+/* Integration */
+.integration{margin-top:32px;padding-top:32px;border-top:1px solid rgba(200,150,220,.18)}
+.integration h3{font-family:var(--serif);font-size:19px;font-weight:600;margin-bottom:4px;color:var(--txt)}
+.integration p{color:var(--txt2);font-size:13px;margin-bottom:16px}
+.int-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:680px){.int-grid{grid-template-columns:1fr}}
+.int-card{background:rgba(255,255,255,.5);border:1px solid rgba(200,150,220,.18);border-radius:16px;padding:20px;backdrop-filter:blur(12px)}
+.int-ew{font-family:var(--mono);font-size:9px;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.int-ew::before{content:"✦"}
+.int-ew.journal{color:var(--mauve)}
+.int-ew.action{color:#3aa88a}
+.int-text{font-family:var(--serif);font-size:15px;font-style:italic;line-height:1.55;color:var(--txt)}
+.int-textarea{width:100%;margin-top:9px;min-height:84px;background:rgba(255,255,255,.5);border:1px solid rgba(200,150,220,.2);border-radius:12px;padding:13px 16px;color:var(--txt);font-family:var(--sans);font-size:13px;line-height:1.6;resize:vertical;transition:all .3s}
+.int-textarea:focus{outline:none;border-color:rgba(232,121,186,.38);background:rgba(255,255,255,.75)}
+.int-textarea::placeholder{color:var(--txt3);font-style:italic}
+.save-journal-btn{margin-top:8px;background:rgba(192,132,232,.1);border:1px solid rgba(192,132,232,.25);color:var(--mauve);padding:9px 14px;border-radius:10px;font-family:var(--sans);font-weight:600;font-size:12px;cursor:pointer;transition:all .3s;display:flex;align-items:center;gap:6px;width:100%;justify-content:center}
+.save-journal-btn:hover{background:rgba(192,132,232,.18)}
+.save-journal-btn.saved{background:var(--mauve);color:#fff}
+
+/* ── QUIZ MODAL ── */
+#quizModal .modal{max-width:640px}
+.quiz-body{padding:40px}
+@media(max-width:680px){.quiz-body{padding:26px 20px}}
+.quiz-prog{display:flex;gap:6px;margin-bottom:30px}
+.quiz-dot{flex:1;height:3px;background:rgba(200,150,220,.25);border-radius:2px;transition:all .4s}
+.quiz-dot.done{background:var(--grad-btn)}
+.quiz-q{font-family:var(--serif);font-size:clamp(21px,3vw,28px);font-weight:600;line-height:1.2;margin-bottom:10px;letter-spacing:-.5px;color:var(--txt)}
+.quiz-q em{font-style:italic;background:var(--grad-txt);-webkit-background-clip:text;background-clip:text;color:transparent}
+.quiz-hint{color:var(--txt2);margin-bottom:26px;font-size:14px;line-height:1.65}
+.quiz-opts{display:grid;gap:9px}
+.quiz-opt{background:rgba(255,255,255,.55);border:1px solid rgba(200,150,220,.2);border-radius:13px;padding:15px 18px;text-align:left;color:var(--txt);font-family:var(--sans);font-size:14px;font-weight:500;cursor:pointer;transition:all .3s;display:flex;align-items:center;gap:12px;backdrop-filter:blur(10px)}
+.quiz-opt:hover{background:rgba(232,121,186,.08);border-color:rgba(232,121,186,.38);transform:translateX(4px)}
+.quiz-opt.sel{background:rgba(232,121,186,.12);border-color:var(--rose)}
+.quiz-opt-ico{width:33px;height:33px;border-radius:50%;background:var(--grad-soft);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.quiz-textarea{width:100%;background:rgba(255,255,255,.55);border:1px solid rgba(200,150,220,.2);border-radius:13px;padding:15px 18px;color:var(--txt);font-family:var(--sans);font-size:14px;line-height:1.6;resize:vertical;min-height:105px;transition:all .3s}
+.quiz-textarea:focus{outline:none;border-color:rgba(232,121,186,.4);background:rgba(255,255,255,.78)}
+.quiz-textarea::placeholder{color:var(--txt3);font-style:italic}
+.intensity-num{font-family:var(--serif);font-size:64px;font-weight:700;text-align:center;background:var(--grad-txt);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:18px;line-height:1}
+.int-slider{width:100%;-webkit-appearance:none;height:5px;background:var(--grad);border-radius:3px;outline:none;margin-bottom:10px}
+.int-slider::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;background:#fff;border-radius:50%;cursor:pointer;box-shadow:0 0 0 4px rgba(232,121,186,.28),0 4px 10px rgba(0,0,0,.1)}
+.int-slider::-moz-range-thumb{width:22px;height:22px;background:#fff;border-radius:50%;cursor:pointer;border:none;box-shadow:0 0 0 4px rgba(232,121,186,.28)}
+.int-marks{display:flex;justify-content:space-between;font-family:var(--mono);font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--txt3)}
+.primary-btn{background:var(--grad-btn);border:none;color:#fff;font-family:var(--sans);font-weight:600;font-size:14px;padding:13px 34px;border-radius:30px;cursor:pointer;transition:all .3s;box-shadow:0 8px 26px rgba(232,121,186,.36);letter-spacing:.3px;margin-top:26px;display:inline-flex;align-items:center;gap:9px}
+.primary-btn:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(232,121,186,.5)}
+.primary-btn:disabled{opacity:.45;cursor:not-allowed;transform:none}
+.secondary-btn{background:rgba(255,255,255,.55);border:1px solid var(--border);color:var(--txt);font-family:var(--sans);font-weight:500;font-size:13px;padding:10px 20px;border-radius:30px;cursor:pointer;transition:all .3s;margin-top:26px;margin-right:10px;backdrop-filter:blur(10px)}
+.secondary-btn:hover{border-color:rgba(232,121,186,.38)}
+
+/* Result */
+.result{text-align:center}
+.result-ico{width:70px;height:70px;background:var(--grad-btn);border-radius:20px;margin:0 auto 22px;display:flex;align-items:center;justify-content:center;font-size:30px;box-shadow:var(--glow);animation:float 3s infinite ease-in-out}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+.result-ew{font-family:var(--mono);font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--rose);margin-bottom:10px}
+.result-h{font-family:var(--serif);font-size:24px;font-weight:600;margin-bottom:8px;letter-spacing:-.3px;color:var(--txt)}
+.result-h em{font-style:italic;background:var(--grad-txt);-webkit-background-clip:text;background-clip:text;color:transparent}
+.result-sub{color:var(--txt2);margin-bottom:22px;font-size:14px;line-height:1.65;max-width:440px;margin-left:auto;margin-right:auto}
+.result-session{background:rgba(255,255,255,.55);border:1px solid rgba(232,121,186,.25);border-radius:18px;padding:24px;text-align:left;margin-bottom:20px;box-shadow:0 4px 24px rgba(232,121,186,.12)}
+
+/* ── EMERGENCY ── */
+.emerg-overlay{position:fixed;inset:0;background:rgba(253,240,250,.96);backdrop-filter:blur(24px);z-index:200;display:none;align-items:center;justify-content:center;padding:20px}
+.emerg-overlay.open{display:flex;animation:fadeIn .3s}
+.emerg-card{max-width:500px;width:100%;text-align:center}
+.emerg-ew{font-family:var(--mono);font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--rose);margin-bottom:10px}
+.emerg-h{font-family:var(--serif);font-size:clamp(24px,4vw,38px);font-weight:600;line-height:1.15;margin-bottom:10px;letter-spacing:-.5px;color:var(--txt)}
+.emerg-h em{font-style:italic;background:var(--grad-txt);-webkit-background-clip:text;background-clip:text;color:transparent}
+.emerg-sub{color:var(--txt2);margin-bottom:26px;font-size:14px;line-height:1.7}
+.emerg-prog{display:flex;gap:5px;justify-content:center;margin-bottom:16px}
+.emerg-prog span{width:28px;height:3px;border-radius:2px;background:rgba(200,150,220,.25);transition:all .4s}
+.emerg-prog span.done{background:var(--grad-btn)}
+.emerg-stage{background:rgba(255,255,255,.6);border:1px solid rgba(232,121,186,.28);border-radius:20px;padding:28px 20px;margin-bottom:20px;min-height:180px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:13px;box-shadow:0 4px 30px rgba(232,121,186,.12);backdrop-filter:blur(16px)}
+.emerg-pt{font-family:var(--mono);font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--rose)}
+.emerg-txt{font-family:var(--serif);font-size:clamp(17px,2.5vw,22px);font-weight:600;line-height:1.3;font-style:italic;color:var(--txt)}
+.emerg-close{background:rgba(255,255,255,.6);border:1px solid var(--border);color:var(--txt2);padding:9px 18px;border-radius:30px;cursor:pointer;font-family:var(--mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;transition:all .3s;backdrop-filter:blur(10px)}
+.emerg-close:hover{border-color:rgba(232,121,186,.38);color:var(--txt)}
+
+/* ── TAP POINTS PAGE ── */
+.tap-ref-grid{display:grid;grid-template-columns:310px 1fr;gap:36px;max-width:960px;margin:0 auto}
+@media(max-width:800px){.tap-ref-grid{grid-template-columns:1fr}}
+.tap-ref-map{background:rgba(255,255,255,.55);border:1px solid rgba(200,150,220,.2);border-radius:22px;padding:26px;position:sticky;top:88px;align-self:start;backdrop-filter:blur(18px);box-shadow:0 4px 24px rgba(200,150,220,.1)}
+.tap-ref-map svg{width:100%;max-width:240px;margin:0 auto;display:block}
+.tap-ref-list{display:flex;flex-direction:column;gap:10px}
+.tap-ref-item{background:rgba(255,255,255,.52);border:1px solid rgba(200,150,220,.18);border-radius:16px;padding:16px 20px;cursor:pointer;transition:all .3s;backdrop-filter:blur(14px)}
+.tap-ref-item:hover{border-color:rgba(232,121,186,.38);transform:translateX(4px)}
+.tap-ref-item.active{border-color:var(--rose);background:rgba(232,121,186,.08);box-shadow:0 0 20px rgba(232,121,186,.12)}
+.tap-ref-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:6px}
+.tap-ref-title{font-family:var(--serif);font-size:18px;font-weight:600;letter-spacing:-.2px;color:var(--txt)}
+.tap-ref-code{font-family:var(--mono);font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--rose);padding:3px 9px;border:1px solid rgba(232,121,186,.28);border-radius:20px;background:rgba(232,121,186,.07);white-space:nowrap}
+.tap-ref-desc{color:var(--txt2);font-size:13px;line-height:1.6}
+.tap-ref-desc strong{color:var(--txt)}
+.tap-ref-meaning{font-family:var(--serif);font-size:13px;font-style:italic;color:var(--txt);margin-top:7px;line-height:1.55;padding-left:10px;border-left:2px solid var(--rose)}
+
+/* ── NEURO PAGE ── */
+.neuro-section{max-width:760px;margin:0 auto}
+.neuro-card{background:rgba(255,255,255,.52);border:1px solid rgba(200,150,220,.18);border-radius:20px;padding:32px;margin-bottom:16px;backdrop-filter:blur(16px);box-shadow:0 2px 16px rgba(200,150,220,.08)}
+.neuro-card h3{font-family:var(--serif);font-size:22px;font-weight:600;margin-bottom:12px;letter-spacing:-.3px;color:var(--txt)}
+.neuro-card h3 em{font-style:italic;background:var(--grad-txt);-webkit-background-clip:text;background-clip:text;color:transparent}
+.neuro-card p{color:var(--txt2);margin-bottom:12px;line-height:1.72;font-size:14px}
+.neuro-card p:last-child{margin-bottom:0}
+.neuro-card strong{color:var(--txt);font-weight:600}
+.neuro-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:14px;margin:22px 0}
+.neuro-stat{text-align:center;padding:17px;background:rgba(255,255,255,.5);border:1px solid rgba(200,150,220,.18);border-radius:14px}
+.neuro-stat-num{font-family:var(--serif);font-size:32px;font-weight:700;background:var(--grad-txt);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1;margin-bottom:6px}
+.neuro-stat-lbl{font-family:var(--mono);font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--txt2)}
+
+/* ── LOG ── */
+.log-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:13px;margin-bottom:26px}
+.log-stat{background:rgba(255,255,255,.52);border:1px solid rgba(200,150,220,.18);border-radius:16px;padding:20px;backdrop-filter:blur(14px)}
+.log-stat-lbl{font-family:var(--mono);font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--txt2);margin-bottom:8px}
+.log-stat-val{font-family:var(--serif);font-size:28px;font-weight:700;background:var(--grad-txt);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1}
+.patterns-box{background:linear-gradient(135deg,rgba(248,192,224,.18),rgba(144,200,232,.14));border:1px solid rgba(232,121,186,.25);border-radius:20px;padding:26px;margin-bottom:26px;backdrop-filter:blur(14px)}
+.patterns-box h4{font-family:var(--serif);font-size:19px;font-weight:600;margin-bottom:13px;color:var(--txt)}
+.patterns-box h4 em{font-style:italic;background:var(--grad-txt);-webkit-background-clip:text;background-clip:text;color:transparent}
+.ptag{display:inline-flex;align-items:center;gap:5px;padding:6px 12px;background:rgba(255,255,255,.55);border:1px solid rgba(200,150,220,.2);border-radius:20px;margin:3px;font-size:12px;font-weight:500;color:var(--txt)}
+.ptag-n{font-family:var(--mono);font-size:10px;color:var(--rose);font-weight:700}
+.log-list{display:flex;flex-direction:column;gap:9px}
+.log-entry{background:rgba(255,255,255,.52);border:1px solid rgba(200,150,220,.18);border-radius:14px;padding:14px 18px;display:flex;justify-content:space-between;align-items:center;gap:13px;flex-wrap:wrap;backdrop-filter:blur(14px)}
+.log-entry-l{flex:1;min-width:170px}
+.log-entry-title{font-family:var(--serif);font-size:14px;font-weight:600;margin-bottom:3px;color:var(--txt)}
+.log-entry-meta{font-family:var(--mono);font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--txt3)}
+.log-shift{display:flex;align-items:center;gap:7px;font-family:var(--mono);font-size:11px}
+.log-sv{padding:4px 8px;border-radius:20px;background:rgba(255,255,255,.5);color:var(--txt)}
+.log-arr{color:var(--rose)}
+.log-drop{color:#3aa88a;font-weight:700}
+
+/* ── JOURNAL ── */
+.journal-entry{background:rgba(255,255,255,.52);border:1px solid rgba(200,150,220,.18);border-left:3px solid var(--mauve);border-radius:12px;padding:16px 20px;margin-bottom:10px;backdrop-filter:blur(14px)}
+.journal-prompt{font-family:var(--mono);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--mauve);margin-bottom:8px}
+.journal-text{font-family:var(--serif);font-size:14px;font-style:italic;line-height:1.65;color:var(--txt);margin-bottom:8px}
+.journal-date{font-family:var(--mono);font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--txt3)}
+
+/* ── CELEBRATION ── */
+.cel-overlay{position:fixed;inset:0;background:rgba(253,240,250,.95);backdrop-filter:blur(30px);z-index:300;display:none;align-items:center;justify-content:center;padding:20px}
+.cel-overlay.open{display:flex;animation:fadeIn .5s}
+.cel-card{max-width:500px;text-align:center;position:relative}
+.cel-burst{font-size:64px;line-height:1;margin-bottom:20px;display:inline-block;animation:burstIn .8s ease-out}
+@keyframes burstIn{0%{transform:scale(0) rotate(0);opacity:0}60%{transform:scale(1.3) rotate(12deg);opacity:1}100%{transform:scale(1) rotate(0);opacity:1}}
+.cel-ew{font-family:var(--mono);font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--rose);margin-bottom:10px}
+.cel-h{font-family:var(--serif);font-size:clamp(24px,4vw,38px);font-weight:600;line-height:1.15;margin-bottom:13px;color:var(--txt)}
+.cel-h em{font-style:italic;background:var(--grad-txt);-webkit-background-clip:text;background-clip:text;color:transparent}
+.cel-shift{background:rgba(255,255,255,.65);border:1px solid rgba(232,121,186,.25);border-radius:20px;padding:24px;margin:22px 0;backdrop-filter:blur(16px)}
+.shift-bar-wrap{position:relative;height:44px;background:rgba(200,150,220,.1);border-radius:25px;overflow:hidden;margin:12px 0 8px}
+.shift-bar-fill{position:absolute;top:0;left:0;height:100%;background:var(--grad);border-radius:25px;transform-origin:left;animation:barIn 1.4s ease-out forwards}
+@keyframes barIn{0%{transform:scaleX(0)}100%{transform:scaleX(var(--s))}}
+.shift-bar-after{position:absolute;top:0;left:0;height:100%;background:linear-gradient(90deg,#90e0c8,#90c8e8);border-radius:25px;transform-origin:left;animation:barAfter 1.4s 1.6s ease-out forwards;transform:scaleX(0);opacity:0}
+@keyframes barAfter{0%{transform:scaleX(var(--s));opacity:0}15%{opacity:1}100%{transform:scaleX(var(--e));opacity:1}}
+.shift-lbls{display:flex;justify-content:space-between;font-family:var(--mono);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--txt3)}
+.shift-nums{display:flex;justify-content:space-between;align-items:center;margin-top:11px;font-family:var(--serif)}
+.sn-b{font-size:24px;font-weight:700;color:var(--txt3);text-decoration:line-through;text-decoration-color:rgba(232,121,186,.45)}
+.sn-a{font-size:34px;font-weight:700;background:var(--grad-txt);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sn-arr{font-size:17px;color:var(--rose)}
+.shift-drop{font-family:var(--mono);font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#3aa88a;margin-top:7px;font-weight:700}
+.cel-affirmation{font-family:var(--serif);font-size:15px;font-style:italic;color:var(--txt2);line-height:1.65;margin-bottom:20px;padding:16px;background:rgba(255,255,255,.5);border-left:3px solid var(--rose);border-radius:10px;backdrop-filter:blur(10px)}
+.cel-actions{display:flex;gap:9px;justify-content:center;flex-wrap:wrap}
+.confetti-p{position:fixed;width:9px;height:9px;pointer-events:none;z-index:301;animation:confettiFall 3s linear forwards}
+@keyframes confettiFall{0%{transform:translateY(-20px) rotate(0);opacity:1}100%{transform:translateY(100vh) rotate(720deg);opacity:0}}
+
+/* ── CUSTOM FORM ── */
+.gen-form{max-width:580px;margin:0 auto}
+.form-group{margin-bottom:20px}
+.form-label{display:block;font-family:var(--mono);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--rose);margin-bottom:8px}
+.form-hint{display:block;color:var(--txt3);font-size:12px;margin-top:5px;font-style:italic}
+.generating{text-align:center;padding:52px 20px}
+.gen-dots{display:inline-flex;gap:7px;margin-bottom:16px}
+.gen-dots span{width:9px;height:9px;background:var(--grad-btn);border-radius:50%;animation:dotBounce 1.4s infinite ease-in-out both}
+.gen-dots span:nth-child(1){animation-delay:-.32s}.gen-dots span:nth-child(2){animation-delay:-.16s}
+@keyframes dotBounce{0%,80%,100%{transform:scale(.6);opacity:.5}40%{transform:scale(1);opacity:1}}
+
+/* ── EMPTY STATE ── */
+.empty-state{text-align:center;padding:52px 20px;color:var(--txt2)}
+.empty-ico{font-size:42px;margin-bottom:13px;opacity:.45}
+.empty-state h3{font-family:var(--serif);font-size:19px;font-weight:600;margin-bottom:8px;color:var(--txt)}
+
+/* ── SOUND CONTROL ── */
+.sound-ctrl{position:fixed;bottom:20px;right:20px;z-index:60;background:rgba(255,255,255,.75);backdrop-filter:blur(20px);border:1px solid rgba(232,121,186,.28);border-radius:50px;padding:9px 14px;display:flex;align-items:center;gap:8px;cursor:pointer;transition:all .3s;box-shadow:0 6px 24px rgba(200,150,220,.2)}
+.sound-ctrl:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(232,121,186,.22)}
+.sound-ico{width:30px;height:30px;background:var(--grad-btn);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px}
+.sound-lbl{font-family:var(--mono);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--txt2)}
+.sound-menu{display:none;position:absolute;bottom:54px;right:0;background:rgba(255,255,255,.94);backdrop-filter:blur(20px);border:1px solid rgba(232,121,186,.25);border-radius:16px;padding:9px;min-width:185px;box-shadow:0 16px 44px rgba(200,150,220,.2)}
+.sound-menu.open{display:block}
+.sound-opt{display:flex;align-items:center;gap:9px;padding:9px 13px;border-radius:10px;cursor:pointer;transition:background .3s;font-size:13px;color:var(--txt)}
+.sound-opt:hover{background:rgba(232,121,186,.1)}
+.sound-opt.active{background:rgba(232,121,186,.13);color:var(--rose)}
+
+/* ── STREAK ── */
+.streak-badge{display:inline-flex;align-items:center;gap:5px;padding:5px 11px;background:linear-gradient(135deg,rgba(248,192,224,.4),rgba(255,184,120,.3));border:1px solid rgba(255,184,120,.4);border-radius:20px;font-family:var(--mono);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#d4782a;font-weight:600;cursor:pointer;transition:all .3s;margin-right:4px}
+.streak-badge:hover{transform:scale(1.05);box-shadow:0 0 16px rgba(255,184,120,.3)}
+.flame{font-size:12px;display:inline-block;animation:flicker 2s infinite ease-in-out}
+@keyframes flicker{0%,100%{transform:scale(1) rotate(-2deg)}25%{transform:scale(1.1) rotate(2deg)}50%{transform:scale(1.05) rotate(-1deg)}75%{transform:scale(1.15) rotate(3deg)}}
+
+/* ── MILESTONE ── */
+.milestone{position:fixed;top:74px;right:20px;background:var(--grad-btn);color:#fff;padding:13px 18px;border-radius:16px;box-shadow:0 10px 36px rgba(232,121,186,.45);z-index:55;display:none;animation:slideInR .5s ease-out;max-width:260px}
+.milestone.show{display:block}
+@keyframes slideInR{0%{transform:translateX(120%);opacity:0}100%{transform:translateX(0);opacity:1}}
+.milestone-title{font-family:var(--serif);font-size:15px;font-weight:600;margin-bottom:3px}
+.milestone-desc{font-size:11px;opacity:.9;line-height:1.45}
+
+/* ── THEME TOGGLE ── */
+.theme-tog{background:rgba(255,255,255,.5);border:1px solid var(--border);color:var(--txt);padding:7px;border-radius:50%;cursor:pointer;width:33px;height:33px;display:flex;align-items:center;justify-content:center;transition:all .3s;margin-right:4px;backdrop-filter:blur(10px)}
+.theme-tog:hover{border-color:rgba(232,121,186,.38);transform:rotate(18deg)}
+.theme-tog svg{width:14px;height:14px}
+
+/* ── PAGES ── */
+.page{display:none;animation:fadeSlide .5s ease}
+.page.active{display:block}
+@keyframes fadeSlide{from{opacity:0;transform:translateX(14px)}to{opacity:1;transform:translateX(0)}}
+
+/* ── FOOTER ── */
+.footer{text-align:center;padding:52px 20px 34px;border-top:1px solid rgba(200,150,220,.18);margin-top:52px}
+.footer-brand{font-family:var(--serif);font-size:15px;font-weight:600;margin-bottom:4px;color:var(--txt)}
+.footer-brand em{font-style:italic;background:var(--grad-txt);-webkit-background-clip:text;background-clip:text;color:transparent}
+.footer-tag{font-family:var(--mono);font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--txt3)}
+
+/* Night mode */
+body.night{
+  --bg:#1a0f22;--bg2:#221530;--bg3:#2a1a38;
+  --card:rgba(255,255,255,.05);--border:rgba(232,121,186,.15);--border-glow:rgba(232,121,186,.4);
+  --txt:#fdf0fa;--txt2:rgba(253,240,250,.68);--txt3:rgba(253,240,250,.42)
+}
+body.night .bg-canvas{opacity:.7}
+body.night .bg-overlay{background:rgba(20,10,28,.5)}
+body.night .nav{background:rgba(26,15,34,.88)}
+body.night .modal{background:linear-gradient(160deg,#231530 0%,#1d1228 50%,#1a1828 100%)}
+body.night .emerg-overlay{background:rgba(26,15,34,.96)}
+body.night .cel-overlay{background:rgba(26,15,34,.95)}
+body.night .session-card,.body.night .path-card,.body.night .log-stat,.body.night .tap-ref-item,.body.night .neuro-card,.body.night .int-card,.body.night .pre-rating,.body.night .journal-entry{background:rgba(255,255,255,.04)}
+body.night .quiz-opt,.body.night .quiz-textarea,.body.night .int-textarea{background:rgba(255,255,255,.04);color:#fdf0fa}
+body.night .filter-btn,.body.night .ctrl-btn,.body.night .secondary-btn,.body.night .sound-ctrl,.body.night .sound-menu,.body.night .mob-btn{background:rgba(255,255,255,.06);color:#fdf0fa}
+body.night .daily,.body.night .result-session,.body.night .setup-box,.body.night .post-box,.body.night .cel-shift,.body.night .cel-affirmation,.body.night .emerg-stage,.body.night .map-card,.body.night .tap-ref-map,.body.night .patterns-box,.body.night .log-entry{background:rgba(255,255,255,.04)}
+body.night .sound-menu{background:rgba(26,15,34,.96)}
+body.night .log-sv,.body.night .ptag,.body.night .chip,.body.night .mode-tog:not(.active),.body.night .fav-btn{background:rgba(255,255,255,.06);color:#fdf0fa}
+body.night .card-cat{color:var(--rose)}
+body.night .guide-bar{background:linear-gradient(180deg,rgba(26,15,34,.4),rgba(26,15,34,.95))}
+
+</style>
+</head>
+<body>
+
+<!-- Liquid blob background -->
+<div class="bg-canvas">
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+  <div class="blob blob3"></div>
+  <div class="blob blob4"></div>
+  <div class="blob blob5"></div>
+</div>
+<div class="bg-overlay"></div>
+
+<div class="ticker">
+  <div class="ticker-track">
+    <span class="ticker-item">Hot Girl Nervous System Reset · EFT tapping for unbreakable confidence</span>
+    <span class="ticker-item">Feel safe in your skin · Release comparison · Embody your worth</span>
+    <span class="ticker-item">Hot Girl Nervous System Reset · EFT tapping for unbreakable confidence</span>
+    <span class="ticker-item">Feel safe in your skin · Release comparison · Embody your worth</span>
+  </div>
+</div>
+
+<nav class="nav">
+  <div class="nav-brand" onclick="showPage('home')">
+    <div class="nav-logo">✦</div>
+    <div class="nav-name">Hot Girl <em>Nervous System Reset</em></div>
+  </div>
+  <div class="nav-links">
+    <button class="nav-btn" onclick="showPage('home')">Sessions</button>
+    <button class="nav-btn" onclick="showPage('custom')">Custom Tap</button>
+    <button class="nav-btn" onclick="showPage('favorites')">Saved</button>
+    <button class="nav-btn" onclick="showPage('points')">Tap Map</button>
+    <button class="nav-btn" onclick="showPage('neuro')">The Science</button>
+    <button class="nav-btn" onclick="showPage('log')">My Log</button>
+    <button class="nav-btn" onclick="showPage('journal')">Journal</button>
+    <span class="streak-badge" id="streakBadge" style="display:none" onclick="showPage('log')">
+      <span class="flame">🔥</span><span id="streakCount">0</span> day streak
+    </span>
+    <button class="theme-tog" onclick="toggleTheme()" title="Toggle dark mode">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="themeIco"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+    <button class="nav-btn hot" onclick="openEmergency()">⚡ Emergency Reset</button>
+  </div>
+  <button class="mob-btn" onclick="toggleMob()">☰ Menu</button>
+</nav>
+
+<div class="mob-panel" id="mobPanel">
+  <button class="mob-close" onclick="toggleMob()">×</button>
+  <button class="nav-btn" onclick="showPage('home');toggleMob()">Sessions</button>
+  <button class="nav-btn" onclick="showPage('custom');toggleMob()">Custom Tap</button>
+  <button class="nav-btn" onclick="showPage('favorites');toggleMob()">Saved</button>
+  <button class="nav-btn" onclick="showPage('points');toggleMob()">Tap Map</button>
+  <button class="nav-btn" onclick="showPage('neuro');toggleMob()">The Science</button>
+  <button class="nav-btn" onclick="showPage('log');toggleMob()">My Log</button>
+  <button class="nav-btn" onclick="showPage('journal');toggleMob()">Journal</button>
+  <button class="nav-btn" onclick="toggleTheme();toggleMob()">🌙 Toggle Dark Mode</button>
+  <button class="nav-btn hot" onclick="openEmergency();toggleMob()">⚡ Emergency Reset</button>
+</div>
+
+<!-- ===== PAGE: HOME ===== -->
+<div class="page active" id="page-home">
+  <section class="hero">
+    <div class="hero-tag">Hot Girl Nervous System Reset</div>
+    <h1 class="hero-h1">Safe in Your Skin.<br><em>Unbreakable</em> in Your Worth.</h1>
+    <p class="hero-sub">EFT tapping for women who are done shrinking, seeking approval, and scrolling past their own reflection wishing they were someone else. You are the one you've been waiting for.</p>
+    <div class="chips">
+      <div class="chip">60 EFT scripts</div>
+      <div class="chip">Interactive tap map</div>
+      <div class="chip">Emergency 3-min reset</div>
+      <div class="chip">AI custom tap builder</div>
+    </div>
+
+    <div class="path-grid">
+      <div class="path-card" onclick="openQuiz()">
+        <div class="path-ico">🔍</div>
+        <div class="path-eyebrow">Diagnose</div>
+        <h3 class="path-title">Find My Block</h3>
+        <p class="path-desc">Tell me what's moving through you right now and I'll find the exact script your nervous system needs.</p>
+        <span class="path-pill">Start the diagnostic →</span>
+      </div>
+      <div class="path-card" onclick="showPage('custom')">
+        <div class="path-ico">✨</div>
+        <div class="path-eyebrow">Custom</div>
+        <h3 class="path-title">Build My Own Tap</h3>
+        <p class="path-desc">Type the exact feeling you're carrying and get a personalized script that speaks directly to your body.</p>
+        <span class="path-pill">Build a custom tap →</span>
+      </div>
+      <div class="path-card" onclick="scrollToLibrary()">
+        <div class="path-ico">💗</div>
+        <div class="path-eyebrow">Browse</div>
+        <h3 class="path-title">Open the Library</h3>
+        <p class="path-desc">60 scripts for body image, self-worth, comparison, validation, confidence, identity, and embodiment.</p>
+        <span class="path-pill">Browse all scripts →</span>
+      </div>
+    </div>
+
+    <div class="daily" id="dailyWidget" onclick="openDailySession()">
+      <div>
+        <div class="daily-eyebrow">Today's Reset</div>
+        <h3 class="daily-title" id="dailyTitle"><em>Loading...</em></h3>
+        <p class="daily-desc" id="dailyDesc"></p>
+        <div class="daily-meta" id="dailyMeta"></div>
+      </div>
+      <button class="primary-btn" style="margin-top:0;white-space:nowrap">Start today's tap →</button>
+    </div>
+  </section>
+
+  <section class="section" id="library">
+    <div class="container">
+      <div class="sec-head">
+        <div class="sec-eyebrow">The Session Library</div>
+        <h2 class="sec-h2">Find your exact <em>reset</em></h2>
+        <p class="sec-sub">Every script targets a pattern your nervous system learned before you had a choice. Today, you choose differently.</p>
+      </div>
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="searchInput" placeholder="Search by feeling, theme, or moment..." oninput="handleSearch()"/>
+      </div>
+      <div class="filter-bar" id="filterBar"></div>
+      <div class="session-grid" id="sessionGrid"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== PAGE: CUSTOM ===== -->
+<div class="page" id="page-custom">
+  <section class="section">
+    <div class="container">
+      <div class="sec-head">
+        <div class="sec-eyebrow">Custom Tap Builder</div>
+        <h2 class="sec-h2">Built from <em>your exact words</em></h2>
+        <p class="sec-sub">The most powerful tapping uses the language your nervous system is already holding. Describe the feeling and we'll craft a script that goes straight to the source.</p>
+      </div>
+      <div class="gen-form" id="genForm">
+        <div class="form-group">
+          <label class="form-label">1. Describe the feeling in your own words</label>
+          <textarea class="quiz-textarea" id="customBlock" rows="4" placeholder="e.g. I can't stop comparing myself to her. I look at her life and feel like I'm behind and not enough and I don't even know how to stop..."></textarea>
+          <span class="form-hint">The more specific and honest, the more powerful the script.</span>
+        </div>
+        <div class="form-group">
+          <label class="form-label">2. Where does it live in your body?</label>
+          <div class="quiz-opts">
+            <button class="quiz-opt" data-body="throat"><span class="quiz-opt-ico">🎙</span>Throat · chest · heart</button>
+            <button class="quiz-opt" data-body="stomach"><span class="quiz-opt-ico">🌊</span>Stomach · gut · lower belly</button>
+            <button class="quiz-opt" data-body="shoulders"><span class="quiz-opt-ico">⛰</span>Shoulders · neck · back</button>
+            <button class="quiz-opt" data-body="head"><span class="quiz-opt-ico">🌀</span>Head · behind the eyes</button>
+            <button class="quiz-opt" data-body="whole-body"><span class="quiz-opt-ico">✨</span>Everywhere · whole body</button>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">3. What do you want to feel after?</label>
+          <div class="quiz-opts">
+            <button class="quiz-opt" data-outcome="safe"><span class="quiz-opt-ico">🕊</span>Safe in my own skin</button>
+            <button class="quiz-opt" data-outcome="confident"><span class="quiz-opt-ico">💎</span>Confident &amp; magnetic</button>
+            <button class="quiz-opt" data-outcome="whole"><span class="quiz-opt-ico">💗</span>Whole &amp; complete as I am</button>
+            <button class="quiz-opt" data-outcome="embodied"><span class="quiz-opt-ico">🔥</span>Embodied &amp; present</button>
+            <button class="quiz-opt" data-outcome="free"><span class="quiz-opt-ico">🌸</span>Free from others' opinions</button>
+          </div>
+        </div>
+        <button class="primary-btn" id="generateBtn" onclick="generateCustomTap()" disabled>Generate my custom tap ✦</button>
+      </div>
+      <div id="genState" style="display:none">
+        <div class="generating">
+          <div class="gen-dots"><span></span><span></span><span></span></div>
+          <p style="color:var(--txt2);font-size:14px">Crafting your personalized reset...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== PAGE: TAP MAP ===== -->
+<div class="page" id="page-points">
+  <section class="section">
+    <div class="container">
+      <div class="sec-head">
+        <div class="sec-eyebrow">The Tap Map</div>
+        <h2 class="sec-h2">Know exactly <em>where to tap</em></h2>
+        <p class="sec-sub">Nine meridian endpoints. Each one holds a different emotional pattern in the body. Click any point to see exactly where it is, why it works, and what it releases.</p>
+      </div>
+      <div class="tap-ref-grid">
+        <div class="tap-ref-map">
+          <p style="font-family:var(--mono);font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--rose);text-align:center;margin-bottom:14px">Click any point</p>
+          <svg viewBox="0 0 200 320" id="refBodySvg">
+            <ellipse cx="100" cy="60" rx="40" ry="50" fill="none" stroke="rgba(45,26,53,.15)" stroke-width="1.5"/>
+            <path d="M85 107 L85 130 Q100 136 115 130 L115 107" fill="none" stroke="rgba(45,26,53,.15)" stroke-width="1.5"/>
+            <path d="M57 136 Q100 126 143 136 L146 228 Q100 238 54 228Z" fill="none" stroke="rgba(45,26,53,.15)" stroke-width="1.5"/>
+            <path d="M57 136 L42 184 L40 222" fill="none" stroke="rgba(45,26,53,.15)" stroke-width="1.5"/>
+            <path d="M143 136 L158 184 L160 222" fill="none" stroke="rgba(45,26,53,.15)" stroke-width="1.5"/>
+            <circle class="tp" data-point="TH" cx="100" cy="14" r="6"/>
+            <circle class="tp" data-point="EB" cx="84" cy="47" r="5"/>
+            <circle class="tp" data-point="SE" cx="70" cy="55" r="5"/>
+            <circle class="tp" data-point="UE" cx="84" cy="70" r="5"/>
+            <circle class="tp" data-point="UN" cx="100" cy="84" r="5"/>
+            <circle class="tp" data-point="CH" cx="100" cy="96" r="5"/>
+            <circle class="tp" data-point="CB" cx="86" cy="148" r="6"/>
+            <circle class="tp" data-point="UA" cx="52" cy="188" r="6"/>
+            <circle class="tp" data-point="KC" cx="164" cy="210" r="6"/>
+            <text x="112" y="18" font-family="DM Mono,monospace" font-size="8" fill="rgba(45,26,53,.35)" letter-spacing="1">TOP OF HEAD</text>
+            <text x="112" y="51" font-family="DM Mono,monospace" font-size="8" fill="rgba(45,26,53,.35)" letter-spacing="1">EYEBROW</text>
+            <text x="56" y="59" font-family="DM Mono,monospace" font-size="8" fill="rgba(45,26,53,.35)" letter-spacing="1" text-anchor="end">SIDE EYE</text>
+            <text x="56" y="74" font-family="DM Mono,monospace" font-size="8" fill="rgba(45,26,53,.35)" letter-spacing="1" text-anchor="end">UNDER EYE</text>
+            <text x="112" y="88" font-family="DM Mono,monospace" font-size="8" fill="rgba(45,26,53,.35)" letter-spacing="1">UNDER NOSE</text>
+            <text x="112" y="100" font-family="DM Mono,monospace" font-size="8" fill="rgba(45,26,53,.35)" letter-spacing="1">CHIN</text>
+            <text x="38" y="153" font-family="DM Mono,monospace" font-size="8" fill="rgba(45,26,53,.35)" letter-spacing="1" text-anchor="end">COLLARBONE</text>
+            <text x="38" y="192" font-family="DM Mono,monospace" font-size="8" fill="rgba(45,26,53,.35)" letter-spacing="1" text-anchor="end">UNDER ARM</text>
+            <text x="185" y="215" font-family="DM Mono,monospace" font-size="8" fill="rgba(45,26,53,.35)" letter-spacing="1" text-anchor="end">KARATE CHOP</text>
+          </svg>
+          <div id="refMapInfo" style="margin-top:14px;padding-top:12px;border-top:1px solid rgba(200,150,220,.18);min-height:85px">
+            <p style="color:var(--txt3);font-size:12px;text-align:center;font-style:italic">Select a point to learn more</p>
+          </div>
+        </div>
+        <div class="tap-ref-list" id="tapRefList"></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== PAGE: NEURO ===== -->
+<div class="page" id="page-neuro">
+  <section class="section">
+    <div class="container">
+      <div class="sec-head">
+        <div class="sec-eyebrow">The Science · The Soul</div>
+        <h2 class="sec-h2">Why tapping works on <em>body image</em></h2>
+        <p class="sec-sub">Confidence isn't a mindset choice. It's a nervous system state. Here's what's actually happening in your body when you tap.</p>
+      </div>
+      <div class="neuro-section">
+        <div class="neuro-card">
+          <h3>Why you can't think your way to <em>feeling beautiful</em></h3>
+          <p>You've read the affirmations. You know your worth intellectually. And yet — you still feel it in the mirror. That's because body image doesn't live in the thinking brain. It lives in the body, in the nervous system, in the parts of you that formed their beliefs about your worth long before you could choose what to believe.</p>
+          <p>EFT (Emotional Freedom Technique) is one of the only evidence-based tools that works at the <strong>somatic level</strong> — which is exactly where body shame, comparison, and the hunger for validation actually live.</p>
+        </div>
+        <div class="neuro-card">
+          <h3>Your <em>amygdala</em> is running the show</h3>
+          <p>When you see your reflection and feel shame, scroll and feel inadequate, or seek a compliment to feel okay — that's your amygdala responding to a perceived threat. It codes "I'm not enough" the same way it codes danger.</p>
+          <p>Tapping the meridian endpoints while naming the feeling creates what researchers call <strong>memory reconsolidation</strong> — the emotional charge attached to the belief gets literally rewritten. Studies using fMRI show measurable amygdala calming within minutes of a tapping session.</p>
+        </div>
+        <div class="neuro-card">
+          <h3>Cortisol drops. <em>Confidence</em> rises.</h3>
+          <p>Comparison, body shame, and validation-seeking are all high-cortisol states. Your body is in stress. And from stress, you cannot access your full magnetic presence — only your survival mode.</p>
+          <div class="neuro-stats">
+            <div class="neuro-stat"><div class="neuro-stat-num">24%</div><div class="neuro-stat-lbl">Cortisol reduction in 1 hour</div></div>
+            <div class="neuro-stat"><div class="neuro-stat-num">40+</div><div class="neuro-stat-lbl">Peer-reviewed studies</div></div>
+            <div class="neuro-stat"><div class="neuro-stat-num">86%</div><div class="neuro-stat-lbl">Anxiety reduction in PTSD trials</div></div>
+          </div>
+          <p>A Harvard Medical School study found EFT reduced cortisol by an average of <strong>24%</strong> in one hour — more than talk therapy or rest alone. Lower cortisol is how you stop bracing and start being.</p>
+        </div>
+        <div class="neuro-card">
+          <h3>Confidence is a <em>nervous system state</em>, not a decision</h3>
+          <p>You cannot decide to feel confident from a body that has been taught it isn't enough. You can't think your way into safety when your nervous system is scanning for threats in the mirror or in other women's highlight reels.</p>
+          <p>EFT works at the body layer first. When the body feels safe, the comparison softens. When the amygdala stops sounding the alarm, you stop seeking external validation because you're no longer in survival mode. <strong>That's the shift.</strong> Not a new belief — a new physiological state.</p>
+          <p>This is why the scripts in this vault are written for the specific micro-moments where shame, comparison, and unworthiness actually show up — not for a generic "love yourself" intention that the nervous system can't receive.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== PAGE: LOG ===== -->
+<div class="page" id="page-log">
+  <section class="section">
+    <div class="container">
+      <div class="sec-head">
+        <div class="sec-eyebrow">Your Session Log</div>
+        <h2 class="sec-h2">Your <em>patterns</em>, revealed</h2>
+        <p class="sec-sub">Every logged session tracks your before and after intensity. The data shows you exactly what's moving in your body over time.</p>
+      </div>
+      <div id="logContent"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== PAGE: FAVORITES ===== -->
+<div class="page" id="page-favorites">
+  <section class="section">
+    <div class="container">
+      <div class="sec-head">
+        <div class="sec-eyebrow">Saved Sessions</div>
+        <h2 class="sec-h2">Your <em>go-to</em> resets</h2>
+        <p class="sec-sub">The sessions you've saved, ready when you need them.</p>
+      </div>
+      <div id="favContent"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== PAGE: JOURNAL ===== -->
+<div class="page" id="page-journal">
+  <section class="section">
+    <div class="container">
+      <div class="sec-head">
+        <div class="sec-eyebrow">Journal Archive</div>
+        <h2 class="sec-h2">Every integration, <em>held</em></h2>
+        <p class="sec-sub">Your reflections from every tapping session — a record of who you've been becoming.</p>
+      </div>
+      <div id="journalContent"></div>
+    </div>
+  </section>
+</div>
+
+<footer class="footer">
+  <div class="footer-brand">✦ Hot Girl <em>Nervous System Reset</em> ✦</div>
+  <div class="footer-tag">Safe in Your Skin · Unbreakable in Your Worth</div>
+</footer>
+
+<!-- ===== QUIZ MODAL ===== -->
+<div class="overlay" id="quizModal">
+  <div class="modal" style="max-width:620px">
+    <button class="modal-close" onclick="closeQuiz()">×</button>
+    <div class="quiz-body" id="quizBody"></div>
+  </div>
+</div>
+
+<!-- ===== SESSION MODAL ===== -->
+<div class="overlay" id="sessionModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeSession()">×</button>
+    <div class="player-hero">
+      <div class="player-cat" id="playerCat"></div>
+      <h1 class="player-title" id="playerTitle"></h1>
+      <p class="player-for" id="playerFor"></p>
+    </div>
+    <div class="player-body">
+      <div class="mode-row">
+        <span class="mode-label">Language:</span>
+        <button class="mode-tog active" data-mode="spiritual">✦ Soul</button>
+        <button class="mode-tog" data-mode="grounded">◆ Grounded</button>
+        <span class="mode-label" style="margin-left:12px">Mode:</span>
+        <button class="mode-tog active" data-prac="self">Self</button>
+        <button class="mode-tog" data-prac="client">With Client</button>
+      </div>
+
+      <div class="pre-rating">
+        <span class="pre-label">How intense is it right now? · 0–10</span>
+        <input type="range" min="0" max="10" value="5" id="preRating"/>
+        <span class="pre-val" id="preVal">5</span>
+      </div>
+
+      <div class="setup-box">
+        <div class="setup-eyebrow">Setup Statement · Karate Chop Point · Say 3×</div>
+        <div class="setup-text" id="setupText"></div>
+      </div>
+
+      <div class="tap-layout">
+        <div class="map-card">
+          <div class="map-card-title">✦ Tap Map · Follow Along</div>
+          <div class="body-svg-wrap">
+            <svg viewBox="0 0 200 280" id="playerBodySvg">
+              <ellipse cx="100" cy="58" rx="40" ry="49" fill="none" stroke="rgba(45,26,53,.12)" stroke-width="1.5"/>
+              <path d="M85 104 L85 127 Q100 133 115 127 L115 104" fill="none" stroke="rgba(45,26,53,.12)" stroke-width="1.5"/>
+              <path d="M57 133 Q100 123 143 133 L146 224 Q100 234 54 224Z" fill="none" stroke="rgba(45,26,53,.12)" stroke-width="1.5"/>
+              <path d="M57 133 L42 180 L40 218" fill="none" stroke="rgba(45,26,53,.12)" stroke-width="1.5"/>
+              <path d="M143 133 L158 180 L160 218" fill="none" stroke="rgba(45,26,53,.12)" stroke-width="1.5"/>
+              <circle class="tp" data-point="TH"  cx="100" cy="13" r="6"/>
+              <circle class="tp" data-point="EB"  cx="84"  cy="44" r="5"/>
+              <circle class="tp" data-point="SE"  cx="70"  cy="52" r="5"/>
+              <circle class="tp" data-point="UE"  cx="84"  cy="68" r="5"/>
+              <circle class="tp" data-point="UN"  cx="100" cy="82" r="5"/>
+              <circle class="tp" data-point="CH"  cx="100" cy="94" r="5"/>
+              <circle class="tp" data-point="CB"  cx="86"  cy="144" r="6"/>
+              <circle class="tp" data-point="UA"  cx="52"  cy="182" r="6"/>
+              <circle class="tp" data-point="KC"  cx="163" cy="204" r="6"/>
+              <text x="113" y="17" font-family="DM Mono,monospace" font-size="7.5" fill="rgba(45,26,53,.3)" letter-spacing="1">TOP OF HEAD</text>
+              <text x="113" y="48" font-family="DM Mono,monospace" font-size="7.5" fill="rgba(45,26,53,.3)" letter-spacing="1">EYEBROW</text>
+              <text x="56" y="56" font-family="DM Mono,monospace" font-size="7.5" fill="rgba(45,26,53,.3)" letter-spacing="1" text-anchor="end">SIDE EYE</text>
+              <text x="56" y="72" font-family="DM Mono,monospace" font-size="7.5" fill="rgba(45,26,53,.3)" letter-spacing="1" text-anchor="end">UNDER EYE</text>
+              <text x="113" y="86" font-family="DM Mono,monospace" font-size="7.5" fill="rgba(45,26,53,.3)" letter-spacing="1">UNDER NOSE</text>
+              <text x="113" y="98" font-family="DM Mono,monospace" font-size="7.5" fill="rgba(45,26,53,.3)" letter-spacing="1">CHIN</text>
+              <text x="38" y="149" font-family="DM Mono,monospace" font-size="7.5" fill="rgba(45,26,53,.3)" letter-spacing="1" text-anchor="end">COLLARBONE</text>
+              <text x="38" y="186" font-family="DM Mono,monospace" font-size="7.5" fill="rgba(45,26,53,.3)" letter-spacing="1" text-anchor="end">UNDER ARM</text>
+              <text x="180" y="210" font-family="DM Mono,monospace" font-size="7.5" fill="rgba(45,26,53,.3)" letter-spacing="1" text-anchor="end">KARATE CHOP</text>
+            </svg>
+          </div>
+          <div class="map-info" id="playerMapInfo">
+            <p style="color:var(--txt3);font-size:11px;font-style:italic">The active point lights up as you move through rounds. Click any point to explore it.</p>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="script-h3">The Script</h3>
+          <div id="roundsContainer"></div>
+        </div>
+      </div>
+
+      <div class="guide-bar" id="guideBar">
+        <div class="guide-status" id="guideStatus">Ready when you are</div>
+        <div class="guide-ctrls">
+          <button class="ctrl-btn" id="prevBtn" onclick="prevRound()" disabled>← Prev</button>
+          <button class="ctrl-btn primary" id="guideBtn" onclick="toggleGuide()">Guide me →</button>
+          <button class="ctrl-btn" id="nextBtn" onclick="nextRound()">Next →</button>
+        </div>
+      </div>
+
+      <div class="post-box">
+        <h4>How's the intensity now?</h4>
+        <p>Re-rate to track your shift. This is how the pattern dashboard builds over time.</p>
+        <div class="pre-rating">
+          <span class="pre-label">Post-session intensity · 0–10</span>
+          <input type="range" min="0" max="10" value="5" id="postRating"/>
+          <span class="pre-val" id="postVal">5</span>
+        </div>
+        <button class="log-btn" id="logBtn" onclick="logSession()">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+          Log this session
+        </button>
+      </div>
+
+      <div class="integration">
+        <h3>Integration</h3>
+        <p>After your final round, take a full breath and sit with these.</p>
+        <div class="int-grid">
+          <div class="int-card">
+            <div class="int-ew journal">Journal Prompt</div>
+            <div class="int-text" id="journalPrompt"></div>
+            <textarea class="int-textarea" id="journalResponse" placeholder="Write your reflection here..."></textarea>
+            <button class="save-journal-btn" id="saveJournalBtn" onclick="saveJournal()">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/></svg>
+              Save to journal
+            </button>
+          </div>
+          <div class="int-card">
+            <div class="int-ew action">Embodiment Practice</div>
+            <div class="int-text" id="actionText"></div>
+          </div>
+        </div>
+        <div style="display:flex;gap:9px;justify-content:center;margin-top:20px;flex-wrap:wrap">
+          <button class="secondary-btn" style="margin-top:0" onclick="printSession()">🖨 Download / Print Script</button>
+          <button class="secondary-btn" style="margin-top:0" onclick="emailSession()">✉ Share with a friend</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== EMERGENCY RESET ===== -->
+<div class="emerg-overlay" id="emergOverlay">
+  <div class="emerg-card">
+    <div class="emerg-ew">⚡ 3-Minute Emergency Reset</div>
+    <h2 class="emerg-h">Come back to <em>yourself.</em></h2>
+    <p class="emerg-sub">Mid-spiral. Before the event. In the bathroom crying at your phone. You don't have to earn your way back to okay. This is your fast track home.</p>
+    <div class="emerg-prog" id="emergProg">
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="emerg-stage">
+      <div class="emerg-pt" id="emergPt">Karate Chop</div>
+      <div class="emerg-txt" id="emergTxt">"Even though I'm in it right now, I choose to come back to my body."</div>
+    </div>
+    <button class="emerg-close" onclick="closeEmergency()">Close</button>
+  </div>
+</div>
+
+<!-- ===== CELEBRATION ===== -->
+<div class="cel-overlay" id="celOverlay">
+  <div class="cel-card">
+    <div class="cel-burst">✦</div>
+    <div class="cel-ew">Session Complete</div>
+    <h2 class="cel-h">You <em>shifted</em> it.</h2>
+    <div class="cel-shift">
+      <div class="shift-lbls"><span>Before</span><span>After</span></div>
+      <div class="shift-bar-wrap">
+        <div class="shift-bar-fill" id="shiftFill"></div>
+        <div class="shift-bar-after" id="shiftAfter"></div>
+      </div>
+      <div class="shift-nums">
+        <span class="sn-b" id="snBefore">8</span>
+        <span class="sn-arr">→</span>
+        <span class="sn-a" id="snAfter">3</span>
+      </div>
+      <div class="shift-drop" id="shiftDrop"></div>
+    </div>
+    <div class="cel-affirmation" id="celAffirm"></div>
+    <div class="cel-actions">
+      <button class="primary-btn" style="margin-top:0" onclick="closeCelebration()">Continue</button>
+    </div>
+  </div>
+</div>
+
+<!-- Sound Control -->
+<div class="sound-ctrl" id="soundCtrl" onclick="toggleSoundMenu(event)">
+  <div class="sound-ico">🔊</div>
+  <span class="sound-lbl" id="soundLbl">Silent</span>
+  <div class="sound-menu" id="soundMenu">
+    <div class="sound-opt active" onclick="setSound('silent',event)">🤫 Silent</div>
+    <div class="sound-opt" onclick="setSound('rain',event)">🌧 Gentle Rain</div>
+    <div class="sound-opt" onclick="setSound('hum',event)">✨ 432Hz Hum</div>
+    <div class="sound-opt" onclick="setSound('binaural',event)">🧠 Theta Waves</div>
+    <div class="sound-opt" onclick="setSound('chimes',event)">🎐 Soft Chimes</div>
+  </div>
+</div>
+
+<!-- Milestone -->
+<div class="milestone" id="milestoneBadge">
+  <div class="milestone-title" id="milestoneTitle">✦ 3-Day Streak!</div>
+  <div class="milestone-desc" id="milestoneDesc">Your nervous system is learning safety.</div>
+</div>
+
+<script>
+// ============================================================
+// DATA
+// ============================================================
+const TAP_POINTS=[
+  {code:"KC",name:"Karate Chop",meridian:"Small Intestine Meridian",body:"Outer edge of your hand, below the pinky finger.",meaning:"The entry point. Where you name what's happening and choose yourself anyway. This is where the session begins — not with pretending it's fine, but with being honest that it's not, and loving yourself through it."},
+  {code:"TH",name:"Top of Head",meridian:"Governing Vessel",body:"The crown of your head, directly on top.",meaning:"Connection to clarity and your truest self — beneath the comparison, the shame, and the performance. Tap here when you've lost track of who you actually are."},
+  {code:"EB",name:"Eyebrow",meridian:"Bladder Meridian",body:"Inner edge of your eyebrow, nearest to your nose.",meaning:"Releases trauma, fear, and old grief held in the body. This is where the pain of not-enoughness lives. Tap here when something has been sitting in your body for a long time."},
+  {code:"SE",name:"Side of Eye",meridian:"Gallbladder Meridian",body:"On the bone at the outer corner of your eye.",meaning:"Releases resentment, bitterness, and comparison rage. The seat of 'why her and not me.' Tap here when comparison is eating you alive."},
+  {code:"UE",name:"Under the Eye",meridian:"Stomach Meridian",body:"On the bone directly under your eye pupil.",meaning:"Releases anxiety, dread, and fear of the future. Where 'I'll never be enough' lives in the body. Tap here when the fear has taken over your whole chest."},
+  {code:"UN",name:"Under the Nose",meridian:"Governing Vessel",body:"The small indent between your nose and upper lip.",meaning:"Releases embarrassment and shame. The home of the 'what will they think' spiral. Tap here when you're performing for an audience that doesn't even exist."},
+  {code:"CH",name:"Chin Point",meridian:"Central Vessel",body:"The indent between your lower lip and chin.",meaning:"Releases confusion and self-doubt. Where 'I don't know who I am anymore' lives. Tap here when you've lost your own voice under everyone else's opinions."},
+  {code:"CB",name:"Collarbone",meridian:"Kidney Meridian",body:"About an inch below your collarbone, in the hollow next to your sternum.",meaning:"Releases chronic stress and frozen patterns. Where the body holds years of bracing. Tap here to physically soften the chest and free the breath."},
+  {code:"UA",name:"Under the Arm",meridian:"Spleen Meridian",body:"About 4 inches below your armpit, on the side of your ribcage.",meaning:"Releases worthlessness and the hunger for validation. The seat of 'I need someone to confirm I'm okay.' Tap here when you keep seeking outside yourself for what only you can give."}
+];
+
+const SESSIONS=[
+  // ── FEELING SAFE IN YOUR SKIN (10) ──
+  {id:"s1",category:"safe-skin",title:"Looking in the mirror and not recognising yourself",forYou:"You look at your reflection and feel disconnected — like the woman looking back isn't quite you, or isn't enough.",duration:"12 min",intensity:"High",bodyLocation:"chest, throat",emotionTags:["shame","disconnection"],triggerTags:["mirror","body-image","disconnection"],
+    setupSpiritual:"Even though I look in the mirror and don't recognise myself, and something in me still flinches at my own reflection, I choose to come home to this body — right now, as it is.",
+    setupGrounded:"Even though I struggle with my reflection, my body has been here through everything, and I'm allowed to make peace with it today.",
+    rounds:["This disconnection from my own reflection","The way I look and immediately find what's wrong","The flinch I do before I even fully see myself","What I've been comparing myself to instead","This body has carried me through everything","I'm allowed to look and just... see","Not fix, not improve, not compare — just see","I come home to this face, this form, right now"],
+    journal:"What is one thing your body has done for you this week that you've been taking for granted?",
+    action:"Stand in front of a mirror for 60 seconds without checking, fixing, or comparing. Just breathe and look."},
+
+  {id:"s2",category:"safe-skin",title:"Hating your body in clothes that don't fit",forYou:"Getting dressed is a gauntlet. What you wear feels like a verdict on your worth.",duration:"10 min",intensity:"High",bodyLocation:"stomach, chest",emotionTags:["shame","anger"],triggerTags:["clothes","getting-dressed","body-hate"],
+    setupSpiritual:"Even though getting dressed today became a battle with my own body, I choose to remember that my worth is not inside a size or a waistband.",
+    setupGrounded:"Even though clothes don't feel right right now, how I look today is not a measure of who I am.",
+    rounds:["This frustration getting dressed today","The verdict my body got when things didn't fit","The comparison to how I used to look or want to look","The shame that crept in before I even left the house","Clothes are just fabric — they don't decide my value","My body deserves to be dressed with kindness","Today is not a verdict on my life","I walk out the door in what I have, worthy"],
+    journal:"What would it feel like to get dressed from a place of kindness instead of criticism?",
+    action:"Put on something today that feels comfortable and kind to your body. Not aspirational. Kind."},
+
+  {id:"s3",category:"safe-skin",title:"Shame about a specific body part",forYou:"There's a part of your body you've been hiding, criticising, or trying to fix for years. This tap is the beginning of a truce.",duration:"12 min",intensity:"High",bodyLocation:"whole-body",emotionTags:["shame","grief"],triggerTags:["body-part","hiding","shame"],
+    setupSpiritual:"Even though I've been at war with this part of my body for so long I can't remember what peace felt like, I invite a tiny bit of softness today.",
+    setupGrounded:"Even though I've criticised this part of me for years, the energy I've spent fighting it hasn't changed it — maybe something else is possible.",
+    rounds:["All the years of not accepting this","The comments from others I still carry","The ways I've hidden it, covered it, minimised it","The hate I've directed at this part that's never done anything wrong","This part of me didn't choose to be judged","It's been here through everything","I don't have to love it today — just stop the war","I call a truce with my own body"],
+    journal:"What has this part of your body carried on your behalf that you've never acknowledged?",
+    action:"Place your hand on the part you've been fighting and take three slow breaths. You don't have to love it. Just touch it with neutrality."},
+
+  {id:"s4",category:"safe-skin",title:"Spiral after seeing photos of yourself",forYou:"You were fine until you saw the photos. Now you're dissecting every angle and considering cancelling your whole life.",duration:"9 min",intensity:"High",bodyLocation:"chest, stomach",emotionTags:["shame","fear"],triggerTags:["photos","social-media","spiral"],
+    setupSpiritual:"Even though those photos triggered a full shame spiral, and I'm picking myself apart frame by frame, I remember that photos are a fraction of a second — not my whole story.",
+    setupGrounded:"Even though I hate how I look in those photos, a camera angle doesn't define how I'm perceived or what I'm worth.",
+    rounds:["This shame spiral the photos triggered","The feature-by-feature critique","Comparing my worst angle to everyone else's best","The urge to untag, delete, or disappear","A photo captures a millisecond, not a life","The people who love me see something I'm missing","I'm allowed to look different in photos and still be beautiful","I put the phone down. I come back to myself"],
+    journal:"If you looked at those photos ten years from now, what would you wish you'd seen?",
+    action:"Close the photos. Do something with your body right now that feels good — move, stretch, dance for 3 minutes."},
+
+  {id:"s5",category:"safe-skin",title:"Dreading being in a swimsuit or summer",forYou:"The warm months come with dread instead of joy. You're pre-managing everyone's reaction to your body before you even get there.",duration:"11 min",intensity:"High",bodyLocation:"stomach, whole-body",emotionTags:["shame","fear"],triggerTags:["swimsuit","beach","summer","hiding"],
+    setupSpiritual:"Even though my body doesn't match what culture says a beach body looks like, my body is a beach body. My body is the one I'm in.",
+    setupGrounded:"Even though I dread being seen in less clothing, no one is looking as closely as I am. And even if they were — my enjoyment of my own life is worth more.",
+    rounds:["This dread that comes with warm weather","Pre-managing everyone's reaction before I even arrive","The rules I've been given about which bodies belong","The joy I've denied myself waiting for a different body","My body is the one I get to live in","Other people's opinions of my bikini have nothing to do with my life","I'm allowed to enjoy summer right now, in this body","I go. I'm present. I'm alive."],
+    journal:"What have you said no to — or not fully said yes to — because you were waiting to be in a different body?",
+    action:"Book or plan the thing you've been postponing until your body is different. Do it now, in this body."},
+
+  {id:"s6",category:"safe-skin",title:"Feeling invisible because of how you look",forYou:"You've started to feel like you move through the world being unseen — like your appearance makes you irrelevant. This tap reclaims your presence.",duration:"10 min",intensity:"High",bodyLocation:"chest, throat",emotionTags:["grief","shame"],triggerTags:["invisible","unnoticed","appearance"],
+    setupSpiritual:"Even though I've been feeling invisible, like my appearance somehow removes me from the story, I remember that presence doesn't come from how I look — it comes from how fully I inhabit myself.",
+    setupGrounded:"Even though I feel overlooked, my visibility is an inside job — and I can start reclaiming it right now.",
+    rounds:["This feeling of being invisible","The story that my appearance is why I'm not seen","Moving through rooms like I don't belong there","Shrinking so no one has to contend with me","My presence is not a visual fact — it's an energy","I was never invisible — I was just turned down","I turn myself back up","I walk in like I'm supposed to be here — because I am"],
+    journal:"Where in your life have you been invisible by choice — not because of how you look, but because you were afraid to take up space?",
+    action:"Make eye contact with three people today. Let yourself be seen."},
+
+  {id:"s7",category:"safe-skin",title:"Feeling unsafe in your body after comments from others",forYou:"Someone said something about your body — a 'joke', a comment, well-meaning or otherwise — and it's still living in you.",duration:"12 min",intensity:"High",bodyLocation:"whole-body",emotionTags:["shame","anger","grief"],triggerTags:["comments","other-people","body-shame"],
+    setupSpiritual:"Even though someone's words landed in my body and made it feel unsafe to simply exist, I return my body to myself. Their opinion has no authority here.",
+    setupGrounded:"Even though that comment hurt, other people's words about my body don't determine my relationship with it.",
+    rounds:["What was said and how it landed","The way I replayed it since","How their words became my internal voice","The way my body tightened up to protect itself","Their opinion of my body does not live here anymore","I evict the voice that was never mine","My body belongs to me — only me","I return to my own authority over how I feel in my skin"],
+    journal:"What did that person's comment say about them — not about you?",
+    action:"Write the comment down on paper. Then write: 'This is not mine.' Tear it up."},
+
+  {id:"s8",category:"safe-skin",title:"Shame around weight changes",forYou:"Your body has changed — gained, lost, fluctuated — and you've been making that mean something catastrophic about your worth.",duration:"12 min",intensity:"High",bodyLocation:"stomach, chest",emotionTags:["shame","grief"],triggerTags:["weight","body-changes","worth"],
+    setupSpiritual:"Even though my body has changed and I've been treating that change like a moral failure, I choose to remember that my body is allowed to be different at different times.",
+    setupGrounded:"Even though my body is not where I want it to be, my body's fluctuations do not determine my value as a human being.",
+    rounds:["The story I've made my weight changes mean","The way I've punished myself for the change","The things I've stopped doing because of it","The version of me I keep waiting to return to","Bodies change. This is what bodies do.","My worth was never inside a number","The part of me that's punishing me needs to rest","I make peace with this body, today, at this weight"],
+    journal:"What has your relationship with your changing body been costing you — in time, energy, joy?",
+    action:"Identify one thing you stopped doing because of your body. Do a small version of it this week."},
+
+  {id:"s9",category:"safe-skin",title:"Being the one who criticises herself first",forYou:"You make the self-deprecating joke before anyone else can. You point out your flaws before someone notices. This tap ends the pre-emptive attack.",duration:"10 min",intensity:"Medium-High",bodyLocation:"throat, chest",emotionTags:["shame","fear"],triggerTags:["self-deprecation","pre-emptive","self-attack"],
+    setupSpiritual:"Even though I've been attacking myself before anyone else can, as if self-criticism is armour — I no longer need to wound myself to stay safe.",
+    setupGrounded:"Even though I make the joke first, self-deprecation is not protection. It's practice. And I can practice something different.",
+    rounds:["This habit of going in on myself first","The self-deprecating joke that's really just pain","Wounding myself so no one else can","The exhaustion of having to armour up before I enter a room","My flaws are not ammunition for anyone — including me","Self-protection doesn't have to hurt me","I'm allowed to enter rooms without a disclaimer","I show up without the pre-emptive apology for my body"],
+    journal:"Who taught you that self-criticism was safer than being seen?",
+    action:"Notice the next time you go to make a self-deprecating joke and just... don't. Breathe instead."},
+
+  {id:"s10",category:"safe-skin",title:"Reconnecting to pleasure in your physical body",forYou:"Your body has become a project to manage rather than a home to live in. Pleasure, sensation, and delight have been offline. This tap turns them back on.",duration:"10 min",intensity:"Medium",bodyLocation:"whole-body",emotionTags:["grief","disconnection"],triggerTags:["pleasure","sensation","embodiment"],
+    setupSpiritual:"Even though I've been managing my body more than inhabiting it, I give myself permission to feel good in my own skin right now — not because I earned it, but because it's available.",
+    setupGrounded:"Even though pleasure has been off the table until my body is different, I can access sensation and joy right now.",
+    rounds:["This disconnection from my own physical experience","Managing the body instead of living in it","Pleasure that's been on hold waiting for a different body","The joy I've been deferring","My body is capable of feeling good right now","Sensation doesn't have a size requirement","I'm allowed to inhabit this body fully","I come back online — all the way in"],
+    journal:"What did your body used to love that you've stopped giving it? What would it mean to bring that back?",
+    action:"Give your body one act of pure sensory pleasure today. Not productive. Just good."},
+
+  // ── COMPARISON (10) ──
+  {id:"c1",category:"comparison",title:"Spiralling after looking at her Instagram",forYou:"You opened the app feeling fine. You're closing it convinced your life, face, and body are fundamentally lacking.",duration:"8 min",intensity:"High",bodyLocation:"chest, stomach",emotionTags:["shame","fear"],triggerTags:["Instagram","comparison","scrolling"],
+    setupSpiritual:"Even though I just went down a comparison spiral and my whole sense of self evaporated into her feed, I choose to come back to my own life.",
+    setupGrounded:"Even though her Instagram triggered me, I'm comparing my unedited reality to her curated highlight reel — and that's not a fair fight.",
+    rounds:["This spiral I just went down","The specific thing I compared and found myself lacking","The way her feed made me feel about my own life","Believing a grid is a life","Her highlights are not her whole story","I was enough before I opened the app","I close it and come back to what's actually real","My life is happening — and it's mine"],
+    journal:"What were you doing or thinking right before you opened the app — and what pulled you back to it?",
+    action:"Delete the app for 48 hours. Notice what you do with the time and energy instead."},
+
+  {id:"c2",category:"comparison",title:"Comparing your body to hers at the gym",forYou:"The gym became a comparison arena instead of a place for your own body. This tap brings you back to yourself.",duration:"9 min",intensity:"Medium-High",bodyLocation:"whole-body",emotionTags:["shame","anger"],triggerTags:["gym","comparison","body"],
+    setupSpiritual:"Even though I walked into the gym to take care of my body and ended up in a comparison spiral, I return to the only body I'm actually here to move — mine.",
+    setupGrounded:"Even though I compared my body to hers, her body has nothing to do with my workout, my progress, or my worth.",
+    rounds:["The comparison that happened before I even started","Looking around instead of inside","Her body becoming the measure of my own","The workout I didn't fully have because I was in my head","Every body in that room has a different story","Her body is her business. Mine is mine.","I'm not here to compete — I'm here to be in my body","I return to my breath, my movement, myself"],
+    journal:"What would your relationship with exercise look like if no one else was in the room?",
+    action:"Your next workout: earphones in, eyes forward. Move your body for your body."},
+
+  {id:"c3",category:"comparison",title:"Comparing your life timeline to everyone else's",forYou:"She's married. She has the house. She has the career, the baby, the body. You feel behind on a timeline you never agreed to.",duration:"11 min",intensity:"High",bodyLocation:"chest, stomach",emotionTags:["fear","grief"],triggerTags:["life-timeline","milestones","behind"],
+    setupSpiritual:"Even though my life doesn't look like what culture said it should by now, my timeline is the only one I was given — and it has its own kind of grace.",
+    setupGrounded:"Even though I feel behind, I'm not late to my own life. I'm just in a different chapter.",
+    rounds:["This feeling of being behind","The milestones I've missed or haven't hit yet","Comparing my chapter 3 to someone's chapter 12","The invisible timeline I never agreed to","There is no single correct way for a life to unfold","I'm not behind — I'm exactly where my path is","My life is not a race I'm losing","I trust the unfolding of my own story"],
+    journal:"Who set the timeline you're comparing yourself to — and is that timeline actually for you?",
+    action:"Write down three things that have happened in your life that you couldn't have planned. Notice they weren't on anyone else's timeline."},
+
+  {id:"c4",category:"comparison",title:"Comparing yourself to your younger self",forYou:"You keep measuring yourself against who you used to be — your younger body, your past energy, your old looks. The comparison is brutal and it keeps you from being here.",duration:"11 min",intensity:"High",bodyLocation:"heart, chest",emotionTags:["grief","shame"],triggerTags:["aging","younger-self","grief"],
+    setupSpiritual:"Even though I keep measuring myself against who I was at 22 or 25 or some other version, I honour every age I've moved through and the woman I am right now.",
+    setupGrounded:"Even though I miss aspects of how I used to look or feel, I cannot be 25 again — and the woman I am now has things she didn't.",
+    rounds:["The comparison to a younger version of me","The things I miss about that body or that face","Feeling like I'm losing something that defined me","The grief of looking different than I used to","Aging is happening. I'm alive. Both are true.","Every version of me was real and valid","Who I am now has depth she didn't have then","I'm not behind my past self. I've grown past her."],
+    journal:"What does the woman you are now have that your younger self didn't?",
+    action:"Find one photo of your younger self and say: 'She was beautiful. So is the woman I am now.'"},
+
+  {id:"c5",category:"comparison",title:"Shrinking yourself around women you perceive as more beautiful",forYou:"You walk into a room, clock who's there, and immediately recalibrate yourself down. This tap resets you to full.",duration:"10 min",intensity:"High",bodyLocation:"whole-body",emotionTags:["shame","fear"],triggerTags:["shrinking","beautiful-women","rooms"],
+    setupSpiritual:"Even though I scan every room for who's more beautiful and immediately make myself smaller, I remember beauty isn't finite — hers doesn't reduce mine.",
+    setupGrounded:"Even though I instinctively compare myself to other women, this room doesn't have a finite amount of beauty or value to go around.",
+    rounds:["This automatic scan I do when I enter a room","Finding who's more beautiful and shrinking","The math that says her beauty subtracts from mine","The version of myself I bring down a notch","Beauty is not a competition and she is not the benchmark","Her presence doesn't diminish mine — they co-exist","I walk in at full size","I take my space. I belong here."],
+    journal:"Who is the woman you most shrink around — and what do you perceive she has that you think you don't?",
+    action:"The next time you enter a room, walk in as if you belong there first. Don't scan. Just arrive."},
+
+  {id:"c6",category:"comparison",title:"Comparison spiral triggered by a wedding, reunion, or event",forYou:"An event is coming — a wedding, a reunion, a party. Your nervous system is treating it like an audition.",duration:"10 min",intensity:"High",bodyLocation:"stomach, whole-body",emotionTags:["shame","fear"],triggerTags:["event","reunion","wedding","audition"],
+    setupSpiritual:"Even though this event feels like a verdict on who I've become, I'm allowed to show up as I am — not as I wish I was.",
+    setupGrounded:"Even though I'm dreading being seen, no one is measuring me against a scorecard. And even if they were — I'm not here for their grade.",
+    rounds:["The dread building as this event approaches","Imagining how I'll be perceived and measured","Comparing who I am now to who I thought I'd be","The way I've been pre-managing everyone's reactions","People are there for the event, not to assess me","I'm allowed to show up as I actually am","No one at this event has authority over my worth","I arrive as myself. That's enough."],
+    journal:"What is your nervous system most afraid people will notice — and what does that fear say about what you believe about yourself?",
+    action:"Pick your outfit for the event from what makes you feel like yourself. Not from what minimises you."},
+
+  {id:"c7",category:"comparison",title:"Feeling threatened by another woman's success or beauty",forYou:"Her win made you feel smaller. Her beauty made you feel less. You know it's not rational — but it's in your body. This tap moves it.",duration:"9 min",intensity:"Medium-High",bodyLocation:"chest, stomach",emotionTags:["shame","resentment"],triggerTags:["threatened","other-women","win"],
+    setupSpiritual:"Even though her success or beauty triggered something in me that I'm not proud of, I honour the feeling as information — it's pointing at something I want — and I let it move.",
+    setupGrounded:"Even though I felt threatened by her, that feeling is data about my own desire, not a verdict on her or me.",
+    rounds:["This threatened feeling I'm not proud of","The specific thing that triggered it","What her win or beauty made me feel about my own","The shame about feeling this way at all","Envy is just desire wearing shame","What I want is available to me","Her success is proof the path exists — not proof it's closed","I transform this into fuel, not war"],
+    journal:"What does what you felt envious of tell you about what you actually want?",
+    action:"Take one step toward what the envy was pointing at. Today. One small step."},
+
+  {id:"c8",category:"comparison",title:"Comparing your body to who you were before a health challenge",forYou:"Illness, injury, trauma, a hard season — your body is different now. And you've been grieving what you lost instead of meeting who you are.",duration:"13 min",intensity:"High",bodyLocation:"whole-body",emotionTags:["grief","shame"],triggerTags:["health","body-change","grief","recovery"],
+    setupSpiritual:"Even though my body has been through something that changed it, and I keep comparing to who I was before, I honour the body that carried me through — changed and all.",
+    setupGrounded:"Even though I miss how my body worked or looked before, the body I'm in now is the one that survived. That's something.",
+    rounds:["This grief for the body I had before","The comparison to who I was before it changed","Feeling like I'm stuck in the wrong version","The frustration, the mourning, the anger","This body went through something. That takes courage.","My body isn't less than who it was — it's different and it's here","I stop asking it to be what it was","I meet who it is now, with kindness"],
+    journal:"What has your body survived that you haven't fully given it credit for?",
+    action:"Write your body a short letter of acknowledgment — not gratitude, not love. Just acknowledgment for what it's been through."},
+
+  {id:"c9",category:"comparison",title:"Comparison paralysis — can't start because she's already doing it better",forYou:"You have something you want to create, share, or do — and you keep not doing it because she already exists and does it better.",duration:"10 min",intensity:"High",bodyLocation:"head, chest",emotionTags:["fear","shame"],triggerTags:["comparison","starting","paralysis"],
+    setupSpiritual:"Even though someone is already doing what I want to do — and doing it brilliantly — my version is still needed. There is no one who will do it exactly like me.",
+    setupGrounded:"Even though she's already doing it, the market isn't full. My voice, my angle, my specific experience is different.",
+    rounds:["This paralysis because she's already there","The comparison that made me want to stop before I started","Believing her existence cancels out mine","Watching instead of creating","No one else has my exact life, voice, or perspective","Her brilliance doesn't use up the space for mine","The world needs both of us","I start. I begin. I make the thing."],
+    journal:"What would you create or share if you had no knowledge that anyone else existed?",
+    action:"Make the first version of the thing today. Messy, small, early. Just begin."},
+
+  {id:"c10",category:"comparison",title:"Comparison to your old photos",forYou:"You keep going back to old photos and grieving who you were. It's keeping you out of the present.",duration:"9 min",intensity:"Medium-High",bodyLocation:"chest, heart",emotionTags:["grief","shame"],triggerTags:["old-photos","nostalgia","past-self"],
+    setupSpiritual:"Even though I keep returning to old photos like they hold the version of me that was worth something, I choose to believe there is as much beauty available to me right now as there was then.",
+    setupGrounded:"Even though I miss how I looked before, nostalgia is not the same as truth. I was comparing myself to things then too.",
+    rounds:["The old photos I keep returning to","Measuring now against then","The grief of a past version of myself","The life I was living inside those photos","She was beautiful — and so is who I am now","Beauty didn't end in those photos","Right now is also a moment I might one day return to","I'm here. Present. Enough."],
+    journal:"What was actually happening in your life when those photos were taken — was everything as perfect as the photos look?",
+    action:"Take one photo of yourself today. Not for anyone else. For future you."},
+
+  // ── SEEKING VALIDATION (10) ──
+  {id:"v1",category:"validation",title:"Posting something and needing it to perform",forYou:"You posted. Now you're refreshing for likes, reading into every comment, and your entire nervous system is riding the metrics.",duration:"8 min",intensity:"High",bodyLocation:"chest, hands",emotionTags:["fear","shame"],triggerTags:["social-media","likes","posting"],
+    setupSpiritual:"Even though I posted something and I can't stop checking how it's performing, I remember my worth was never inside the numbers.",
+    setupGrounded:"Even though I keep refreshing, likes are algorithmic, not a vote on my value.",
+    rounds:["This compulsive checking since I posted","My nervous system riding the metrics","Reading into every like and every silence","Needing the response to tell me if it was good enough","My worth was here before the post","The right people are reached by the right things","The silence doesn't mean nothing. It means silence.","I put the phone down. I'm already enough."],
+    journal:"What would you post — and how freely — if you could never see who liked it?",
+    action:"Post something today and turn your phone face-down for one hour after. Don't check."},
+
+  {id:"v2",category:"validation",title:"Needing a compliment to feel okay about how you look",forYou:"You rely on external confirmation that you're attractive. Without it, you spiral. This tap builds internal steadiness.",duration:"10 min",intensity:"High",bodyLocation:"chest, throat",emotionTags:["fear","shame"],triggerTags:["compliments","external-validation","appearance"],
+    setupSpiritual:"Even though I've been waiting for someone to confirm I'm beautiful before I can believe it, I practice finding that confirmation inside myself.",
+    setupGrounded:"Even though I crave the compliment, no one else's eye is more reliable than my own when I'm in a regulated state.",
+    rounds:["This hunger for someone to confirm how I look","Basing how I feel about myself on what others say","The emptiness when no compliment comes","The high that crashes as soon as it fades","Compliments are wonderful — but they can't be my baseline","My own eyes, in a regulated state, are the most reliable","I'm allowed to find myself beautiful without being told","I build this inside, where it can't be taken"],
+    journal:"What is the one compliment you most want to hear — and what would it mean if you gave it to yourself?",
+    action:"Stand in front of a mirror and say one true thing about yourself out loud. Not a lie. Something you can actually believe."},
+
+  {id:"v3",category:"validation",title:"Seeking reassurance from a partner about your body",forYou:"You ask him — or her — repeatedly if you look okay, if you're attractive, if they still find you beautiful. The reassurance helps briefly and then the need returns.",duration:"12 min",intensity:"High",bodyLocation:"heart, stomach",emotionTags:["fear","shame"],triggerTags:["partner","reassurance","body"],
+    setupSpiritual:"Even though I keep asking for reassurance my partner can't fully give, I recognise that no external confirmation can fill a hole built by my own belief.",
+    setupGrounded:"Even though I need the reassurance, the hunger will return as long as I'm asking the wrong source.",
+    rounds:["This pattern of needing to be told I'm okay","The reassurance that helps for a moment and then fades","The vulnerability of having to ask","The belief underneath: that without their confirmation, I'm not enough","Their love is real — but it can't be my entire foundation","The part of me that needs reassuring is not a burden — it's scared","I'm building something they can't give me — myself","I come home to my own knowing"],
+    journal:"What would it mean to not need the reassurance — not because you stopped caring, but because you already knew?",
+    action:"The next time you want to ask for reassurance, pause. Ask yourself first: 'What do I actually think?'"},
+
+  {id:"v4",category:"validation",title:"Changing your personality to be liked",forYou:"You read the room and adjust — your opinions, your humour, your whole personality. You're so good at it you've lost track of who you actually are.",duration:"11 min",intensity:"High",bodyLocation:"throat, chest",emotionTags:["shame","fear"],triggerTags:["chameleon","people-pleasing","identity"],
+    setupSpiritual:"Even though I've become so fluent in being whoever the room needs that I've lost myself in the translation, I come back to the one I started with — me.",
+    setupGrounded:"Even though I'm skilled at reading and adapting to rooms, I've been overriding myself to do it. That's a cost I'm done paying.",
+    rounds:["This automatic adjusting I do in every room","Scanning for what version of me will be most liked","The opinion I swallowed before I even said it","How lost I feel when I'm alone and no one needs a version","I have a self beneath the adaptations","She's been waiting for me to stop performing","The people worth keeping want the real one","I speak from myself — not from the room"],
+    journal:"What is an opinion, belief, or part of your personality you've been hiding because you feared it wouldn't be received?",
+    action:"Say something true today that you would normally keep to yourself. Just one thing. Notice what happens."},
+
+  {id:"v5",category:"validation",title:"Needing to be seen as the 'pretty one' in your group",forYou:"You've built an identity around being the most attractive in your circle — and when that feels under threat, your whole sense of self wobbles.",duration:"12 min",intensity:"High",bodyLocation:"chest, throat",emotionTags:["fear","shame"],triggerTags:["pretty-one","social-comparison","identity"],
+    setupSpiritual:"Even though my identity has been wrapped up in being perceived as the most attractive, I'm ready to be known for the fullness of who I am.",
+    setupGrounded:"Even though I've relied on attractiveness as part of my social identity, it's a fragile foundation — and I have much more to stand on.",
+    rounds:["This identity built around being perceived as attractive","The threat I feel when someone else enters the room","The competition I'm in that no one else signed up for","The emptiness underneath the external position","My beauty is not a ranking — it doesn't need to be first","Who I am is so much bigger than how I look","The parts of me I've underdeveloped while beauty was my focus","I'm becoming someone known for more than this"],
+    journal:"If you couldn't rely on your appearance as a social asset, who would you be — and what would you invest in?",
+    action:"Go somewhere or do something where your appearance is completely irrelevant. Notice who you are there."},
+
+  {id:"v6",category:"validation",title:"Your worth fluctuating with how good you look that day",forYou:"You wake up, look in the mirror, and it determines everything — your mood, your confidence, your productivity, your willingness to be seen. This tap decouples the link.",duration:"10 min",intensity:"High",bodyLocation:"whole-body",emotionTags:["shame","fear"],triggerTags:["good-day-bad-day","appearance","worth"],
+    setupSpiritual:"Even though my worth has been fluctuating with my appearance from day to day, I am not more valuable on good hair days. I'm the same person in every mirror.",
+    setupGrounded:"Even though how I look affects how I feel, my value as a person isn't changing — only my perception of it.",
+    rounds:["This daily verdict from the mirror","Good appearance days and bad appearance days","How the bad days infect everything else","The confidence I gate-keep behind looking a certain way","I'm the same person in every mirror","My capacity, my love, my worth — constant","A bad face day is just a face day","I let myself have a full day regardless of how I started it"],
+    journal:"What do you do — or not do — on bad appearance days that you do freely on good ones? What is that costing you?",
+    action:"On your next bad appearance day, do one thing you would normally wait for a 'good day' to do."},
+
+  {id:"v7",category:"validation",title:"Constantly monitoring how you're perceived",forYou:"Part of you is always watching yourself from the outside — tracking how you're coming across, adjusting in real time, exhausted from never being off stage.",duration:"10 min",intensity:"High",bodyLocation:"head, shoulders",emotionTags:["fear","shame"],triggerTags:["self-monitoring","perception","exhaustion"],
+    setupSpiritual:"Even though there's a part of me that's always performing for an invisible audience, I give myself permission to step offstage.",
+    setupGrounded:"Even though I'm constantly tracking how I'm coming across, I'm spending cognitive energy on a problem that doesn't need to be solved in real time.",
+    rounds:["This constant self-monitoring that never shuts off","The invisible audience I perform for","The adjustments I make mid-sentence mid-expression","The exhaustion of never being offstage","I'm allowed to stop watching myself","Most people are watching themselves too","The real me doesn't need to be auditioned","I let go of the camera. I just live."],
+    journal:"What would you do differently if you truly believed no one was watching or evaluating you?",
+    action:"Have one conversation today where your only goal is to be curious about the other person. No self-monitoring. Just interest."},
+
+  {id:"v8",category:"validation",title:"Needing external validation before you take a risk",forYou:"You wait for approval before you act — from a friend, a partner, social media. You can't take the leap without someone signing off first.",duration:"11 min",intensity:"High",bodyLocation:"stomach, throat",emotionTags:["fear","doubt"],triggerTags:["approval","risk","permission"],
+    setupSpiritual:"Even though I've been waiting for external permission to take up more of my life, I am the authority here. No one else can sign off on my becoming.",
+    setupGrounded:"Even though I want backup before I take a risk, the validation I get will never feel like enough — because it's not coming from the right source.",
+    rounds:["This habit of waiting for permission","The person whose approval I'm waiting for","The risk I haven't taken without their sign-off","The way their approval doesn't even stick the way I hoped","The only approval that creates lasting confidence is mine","I'm the authority over my own becoming","I move before I have full permission from the outside","I give myself the green light"],
+    journal:"What is the one thing you've been waiting for someone else to say it's okay to do?",
+    action:"Do it. Don't ask anyone. Do it today."},
+
+  {id:"v9",category:"validation",title:"Dressing or presenting yourself for others' approval",forYou:"Your style, your makeup, your presentation is calibrated to what others will accept — not what feels true to you.",duration:"10 min",intensity:"Medium-High",bodyLocation:"whole-body",emotionTags:["shame","fear"],triggerTags:["style","dressing","authenticity"],
+    setupSpiritual:"Even though I've been dressing for other people's eyes for so long I've forgotten what I actually like, I begin to find my own eye again.",
+    setupGrounded:"Even though I present myself for approval, I'm allowed to dress for myself — for my own enjoyment, not management of others' reactions.",
+    rounds:["The way I dress for other people's gaze","The style I've never tried because it felt too much","Waiting for approval before I claim something as mine","Self-editing before I even get dressed","My appearance belongs to me first","What I like is a valid reason to wear it","I don't need a consensus on who I'm allowed to be","I dress for my own delight today"],
+    journal:"What style, look, or way of presenting yourself have you always wanted to try but held back on? What were you afraid of?",
+    action:"Wear one thing today that's purely for you. Not for anyone's approval."},
+
+  {id:"v10",category:"validation",title:"When someone's opinion of you changes how you feel about yourself",forYou:"One person's cold response and your whole self-esteem shifts. This tap builds internal steadiness that doesn't move with every wind.",duration:"10 min",intensity:"High",bodyLocation:"chest, stomach",emotionTags:["fear","shame"],triggerTags:["one-person","opinion","self-esteem"],
+    setupSpiritual:"Even though one person's energy toward me shifted my entire sense of self today, I'm building an inner world that isn't that dependent on one person's weather.",
+    setupGrounded:"Even though their response threw me, how one person feels about me on one day is not reliable data about my worth.",
+    rounds:["The shift that happened when their response changed","How quickly my self-esteem moved with it","Building my sense of self on unstable ground","One bad reading becoming a conclusion","One person, one day, one interaction — that's all this is","I don't know what's happening for them","My worth isn't determined by a single person's mood","I anchor into something more solid than this"],
+    journal:"Why does this specific person's opinion carry so much weight? What have you given them?",
+    action:"Identify three people whose opinion of you is consistently warm. Let their perception be the data today."},
+
+  // ── BODY IMAGE & LOW SELF-WORTH (10) ──
+  {id:"b1",category:"body-worth",title:"'I'll be happy when my body looks different'",forYou:"You've been deferring your life to a future body. Joy, confidence, relationships — all on hold until you look different. This tap ends the deferral.",duration:"12 min",intensity:"High",bodyLocation:"chest, whole-body",emotionTags:["grief","shame"],triggerTags:["deferral","future-body","happiness"],
+    setupSpiritual:"Even though I've been postponing my life to a body that hasn't arrived yet, I choose to live now — in this body, in this moment.",
+    setupGrounded:"Even though I keep deferring things to when my body is different, the wait has been longer than any body change would ever be.",
+    rounds:["This waiting for a different body to begin living","Everything I've put on hold","The joy I've deferred. The experiences I've declined.","The belief that the life I want requires a different body to live","My life is happening right now whether I'm ready or not","The body I'll have won't feel that different if I'm still waiting","I'm allowed to live this version","I move the start date to today"],
+    journal:"What is the one thing you've been waiting to do until your body is different? How long have you been waiting?",
+    action:"Do a small version of the deferred thing this week. In this body. Now."},
+
+  {id:"b2",category:"body-worth",title:"Feeling fundamentally flawed as a person",forYou:"Somewhere underneath everything is a belief that you are fundamentally, categorically not enough — not just your body, but you. This tap goes to the root.",duration:"14 min",intensity:"High",bodyLocation:"whole-body, heart",emotionTags:["shame","grief"],triggerTags:["core-shame","not-enough","fundamentally-flawed"],
+    setupSpiritual:"Even though something deep in me is convinced I am fundamentally flawed — not just my body but my whole self — I am willing to question that belief today.",
+    setupGrounded:"Even though I believe I'm fundamentally not enough, that belief was built — and what's built can be rebuilt.",
+    rounds:["This deep belief that I am fundamentally flawed","Where it came from and how long I've carried it","The way it colours everything — how I see myself, how I receive love","The proof I keep collecting that it's true","This belief was taught to me — I didn't arrive with it","It served a function once. It doesn't anymore.","I'm willing to hold this with a little more doubt","Something is available beyond this story"],
+    journal:"Who or what experience first taught you that you were fundamentally not enough? How old were you?",
+    action:"Find one piece of evidence today that contradicts the belief that you are fundamentally flawed. Write it down."},
+
+  {id:"b3",category:"body-worth",title:"Apologising for existing or taking up space",forYou:"You apologise constantly — for your presence, your needs, your opinions, your body. You've been sorry for being here. This tap ends the apology.",duration:"11 min",intensity:"High",bodyLocation:"throat, chest",emotionTags:["shame","fear"],triggerTags:["apologising","taking-up-space","presence"],
+    setupSpiritual:"Even though I've been living in a constant state of apology for my existence, I remember I was born whole and I'm allowed to stay that way.",
+    setupGrounded:"Even though apologising has felt like the safest option, I'm allowed to be here without the constant disclaimer.",
+    rounds:["All the times I've said sorry for being here","The space I shrink from so others don't have to accommodate me","Apologising for needs, opinions, feelings, my own presence","The exhaustion of existing apologetically","I have not done anything wrong by being here","I'm allowed to need things and not apologise for the need","I'm allowed to take up my actual space","I stand here, fully, without the apology"],
+    journal:"When was the last time you apologised for something that didn't require an apology? What were you actually protecting?",
+    action:"Notice every apology you make today. Catch one that wasn't needed and replace it with a statement instead."},
+
+  {id:"b4",category:"body-worth",title:"Feeling like love has to be earned",forYou:"You believe that love — romantic, friendship, family — is contingent on what you look like, do, or provide. This tap builds unconditional self-belonging.",duration:"12 min",intensity:"High",bodyLocation:"heart, stomach",emotionTags:["fear","shame"],triggerTags:["earning-love","conditional","worthiness"],
+    setupSpiritual:"Even though I've learned that love is something I have to earn through my appearance or effort, I choose to practice receiving it as something I was born deserving.",
+    setupGrounded:"Even though I operate like love is conditional, the love I want most is the kind that doesn't come with conditions.",
+    rounds:["This belief that love requires earning","The way I perform, achieve, or look to stay deserving","What I fear will happen if I stop earning it","How exhausting it is to never fully have it","I was born into this world deserving to be loved","Love that's contingent on what I look like isn't love — it's a transaction","I'm practicing belonging to myself unconditionally","From here, I attract the love that matches"],
+    journal:"What would you stop doing to be loved if you already knew you were loveable?",
+    action:"Do one thing today from love, not from the fear of losing it."},
+
+  {id:"b5",category:"body-worth",title:"Feeling like you don't deserve to be seen or desired",forYou:"You secretly don't believe you're someone worth desiring — physically, romantically, or in the world. This tap rebuilds the foundation.",duration:"12 min",intensity:"High",bodyLocation:"heart, lower-belly",emotionTags:["shame","grief"],triggerTags:["desirability","unworthy","being-wanted"],
+    setupSpiritual:"Even though some part of me has decided I don't deserve to be wanted or desired, I question that verdict — because it was never mine to deliver.",
+    setupGrounded:"Even though I don't feel desirable, that feeling is a learned response — not an objective reality.",
+    rounds:["This belief that I'm not someone to be desired","The evidence I keep collecting for it","Who or what taught me I wasn't worth wanting","How I've made myself small so no one would want and then reject me","Desirability is not reserved for a specific type of body","I am someone worth wanting — in this body, right now","I'm allowed to feel beautiful and magnetic","I open to being wanted without bracing for it to be taken"],
+    journal:"When did you first decide you weren't someone to be desired? What happened?",
+    action:"Do one thing today that makes you feel like the most desirable version of yourself. Even small. Even private."},
+
+  {id:"b6",category:"body-worth",title:"Low self-worth in the morning before the day begins",forYou:"Before you even get out of bed, there's a weight. A low-grade belief that today, like yesterday, you won't be enough. This tap resets you at the start.",duration:"8 min",intensity:"Medium-High",bodyLocation:"chest, whole-body",emotionTags:["grief","fear"],triggerTags:["morning","self-worth","daily-reset"],
+    setupSpiritual:"Even though I woke up with this familiar heaviness — this feeling that I'm already behind before the day starts — I choose to begin again. Right here.",
+    setupGrounded:"Even though mornings can feel heavy with low self-worth, what I feel at 7am is not a prediction of who I am.",
+    rounds:["This morning heaviness in my chest","The familiar weight before the day even starts","The feeling that I'm behind or not enough already","The low-grade dread about who I'll be today","I'm allowed to begin again every single morning","This heaviness is a feeling, not a fact","I bring something to today that I didn't have yesterday","I rise. I begin. I'm enough today."],
+    journal:"What is the belief you most often wake up with — and where did it come from?",
+    action:"Before you pick up your phone tomorrow morning, say one thing out loud: 'I'm allowed to have a good day.'"},
+
+  {id:"b7",category:"body-worth",title:"Feeling like your worth diminishes as you age",forYou:"You've absorbed the story that your value as a woman is tied to your youth — and as you age, you're losing something essential. This tap dismantles that.",duration:"12 min",intensity:"High",bodyLocation:"heart, whole-body",emotionTags:["grief","fear"],triggerTags:["aging","worth","youth"],
+    setupSpiritual:"Even though I've internalised the story that my worth depreciates as I age, I choose to live in a different story — one where I am becoming more, not less.",
+    setupGrounded:"Even though culture tells me I'm less valuable as I age, that's a cultural script — not a truth.",
+    rounds:["This fear that I'm losing something with every year","The way I've tied my worth to how young I look","The panic when I see changes","The exhaustion of fighting time","A woman's power doesn't peak at 22","I'm becoming more myself with every year","The things I know now that I couldn't have known then","I am growing into my worth, not out of it"],
+    journal:"What do you know now — about yourself, life, love, strength — that you didn't know at the age you've been mourning?",
+    action:"Write a list: 10 things you know now that you didn't at the age you feel most nostalgic for."},
+
+  {id:"b8",category:"body-worth",title:"The inner critic that never shuts up",forYou:"There's a voice that runs constant commentary on everything you do, look like, say, and feel. It's exhausting. And it's not yours. This tap starts to turn it down.",duration:"11 min",intensity:"High",bodyLocation:"head, chest",emotionTags:["shame","fear"],triggerTags:["inner-critic","self-talk","voice"],
+    setupSpiritual:"Even though there's a voice that narrates my every flaw without pause, I recognise this voice was taught — and I can teach it something different.",
+    setupGrounded:"Even though my inner critic is relentless, it's not the truth. It's a learned response, and learned responses can change.",
+    rounds:["This voice that never fully quiets","What it says and how often it says it","The exhaustion of living inside this commentary","Believing it's just the truth about me","This voice was taught by experiences and people","It's trying to protect me — and it's gone too far","I thank it for trying and I turn down the volume","A kinder voice is possible. I'm beginning to build it."],
+    journal:"Whose voice does your inner critic sound like most? What were they trying to do — and what did it actually teach you?",
+    action:"Notice one moment today when the inner critic fires. Say to yourself: 'I hear you. And I choose a different thought.' Just once."},
+
+  {id:"b9",category:"body-worth",title:"Feeling unloveable after rejection",forYou:"Someone didn't choose you — romantically, socially, professionally — and your nervous system has turned it into a verdict on your fundamental worth.",duration:"12 min",intensity:"High",bodyLocation:"heart, stomach",emotionTags:["grief","shame"],triggerTags:["rejection","unloveable","not-chosen"],
+    setupSpiritual:"Even though not being chosen by them has translated, in my body, to not being worthy of being chosen by anyone, I return to the truth: their no has nothing to say about my worth.",
+    setupGrounded:"Even though rejection hurts, being rejected by one person does not make me unloveable. It makes me not a match for that person.",
+    rounds:["This rejection and how my body received it","The meaning I made of it about myself","The verdict: unloveable, too much, not enough","The leap from 'they didn't choose me' to 'no one will'","One person's no is not everyone's answer","Not a match is not the same as not worthy","I grieve this. And I keep my worth intact.","I am loveable. That hasn't changed."],
+    journal:"What did you make this rejection mean — and is that meaning the only interpretation available?",
+    action:"Reach out to someone who has chosen you — a friend, a family member. Let their warmth in today."},
+
+  {id:"b10",category:"body-worth",title:"Building identity and confidence from the inside out",forYou:"You're done building your sense of self from how you look or how others respond to you. You want something more solid. This tap begins the foundation.",duration:"14 min",intensity:"Medium",bodyLocation:"whole-body",emotionTags:["doubt","grief"],triggerTags:["identity","confidence","inside-out"],
+    setupSpiritual:"Even though I've been building my sense of self from the outside in — from appearance, approval, and performance — I begin today to build from something no one can take away.",
+    setupGrounded:"Even though external validation has been my primary source of self-worth, I can begin to develop an internal source that doesn't fluctuate with others' opinions.",
+    rounds:["This foundation built on what I look like and what others think","How unstable it is — up and down with every reaction","The exhaustion of maintaining it","The hunger for something that holds","My values, my courage, my care — these are real","My kindness, my mind, my humor — constant","The woman I am beneath the appearance exists fully","I build from here — from the inside out"],
+    journal:"Who are you beneath your appearance and beneath others' opinions of you? What remains?",
+    action:"Write five qualities about yourself that have nothing to do with how you look or whether anyone approves of you."},
+
+  // ── UNBREAKABLE CONFIDENCE (10) ──
+  {id:"u1",category:"confidence",title:"Embodying your most magnetic self before you walk in",forYou:"You have somewhere to be. You want to walk in as her — magnetic, grounded, fully here. This tap sets you before you arrive.",duration:"6 min",intensity:"Medium",bodyLocation:"whole-body",emotionTags:["doubt"],triggerTags:["embodiment","pre-event","magnetism"],
+    setupSpiritual:"Even though I sometimes lose myself before big moments, I anchor into the most magnetic version of me — right now, in my body.",
+    setupGrounded:"Even though I'm nervous, I can choose how I arrive. I prepare my energy the way I prepare my appearance.",
+    rounds:["Any nervousness before this moment","The performance pressure that wants to shrink me","Forgetting for a moment who I actually am","My full presence and what it does to a room","I'm allowed to take my time entering","She doesn't rush. She arrives.","My energy precedes me and it is warm, clear, powerful","I walk in as her. Right now."],
+    journal:"What does the most magnetic version of you feel like in her body as she enters a room?",
+    action:"Before you walk in, take one slow breath. Roll your shoulders back. Feel your feet. Then enter."},
+
+  {id:"u2",category:"confidence",title:"Staying in yourself when you feel pressured to shrink",forYou:"In certain situations — rooms, relationships, conversations — you feel the pull to make yourself smaller. This tap helps you hold your full size.",duration:"10 min",intensity:"Medium-High",bodyLocation:"chest, throat",emotionTags:["fear","shame"],triggerTags:["shrinking","pressure","holding-ground"],
+    setupSpiritual:"Even though this situation is pulling me toward my smaller self, I stay rooted in who I actually am — here and everywhere.",
+    setupGrounded:"Even though there's pressure to be less here, being less doesn't actually make anyone more comfortable. It just makes me smaller.",
+    rounds:["This pull to make myself smaller right now","The room or person that triggers the contraction","The words I swallow and the space I don't take","Learning small to keep things smooth","The cost of this — in self-trust, in presence, in truth","I'm allowed to be full size here too","Small doesn't protect anything worth protecting","I expand. I hold my ground."],
+    journal:"In which specific situation do you most feel the pull to shrink — and what are you afraid will happen if you don't?",
+    action:"In your next interaction, hold your posture. Say the thing you'd normally swallow. Do one."},
+
+  {id:"u3",category:"confidence",title:"Reclaiming your confidence after humiliation",forYou:"Something humiliating happened — you were called out, laughed at, rejected publicly, or made to feel small. Your confidence is in pieces. This tap reassembles it.",duration:"12 min",intensity:"High",bodyLocation:"whole-body",emotionTags:["shame","grief"],triggerTags:["humiliation","public","confidence"],
+    setupSpiritual:"Even though what happened knocked me and I'm still shaking from it, I remember that I have survived every humiliation so far — and I will survive this too.",
+    setupGrounded:"Even though this was humiliating, humiliation is survivable and it doesn't have to define what happens next.",
+    rounds:["The event. The moment. The impact.","How my body received what happened","The shame still sitting in my chest and face","The story I've started building about myself from this","People survive humiliation. I will too.","This isn't the end of the story — it's a chapter","I'm not defined by their reaction or this moment","My confidence is mine — it isn't lost, just shaken. I find it."],
+    journal:"What is one time in your past you were humiliated and survived it — and what did you find out about yourself on the other side?",
+    action:"Do something small and bold today. Not because you feel confident — to remember that you can act without it."},
+
+  {id:"u4",category:"confidence",title:"Trusting your own perception and judgement",forYou:"Your judgement has been questioned enough — by others or by yourself — that you've stopped trusting it. You outsource decisions because you don't trust your own eye.",duration:"11 min",intensity:"Medium-High",bodyLocation:"gut, head",emotionTags:["doubt","fear"],triggerTags:["self-trust","judgement","decisions"],
+    setupSpiritual:"Even though I've stopped trusting my own perception, my knowing is not broken — it just needs to be listened to again.",
+    setupGrounded:"Even though my judgement has felt unreliable, I have gotten things right more often than I give myself credit for.",
+    rounds:["This habit of second-guessing my own perception","Outsourcing my knowing to other people","The times I was right and didn't listen","The cost of perpetually looking outside myself","My first hit is usually the right one","My perception is valid — even without confirmation","I am the authority on my own experience","I trust myself. I make the call."],
+    journal:"What does your gut already know about a current situation that your head keeps arguing with?",
+    action:"Make one decision today without asking anyone's opinion. Just yours."},
+
+  {id:"u5",category:"confidence",title:"Moving through the world like you belong everywhere",forYou:"You walk into rooms wondering if you belong there. This tap settles you into the truth: you were invited — by life itself — into every space you enter.",duration:"9 min",intensity:"Medium",bodyLocation:"whole-body, chest",emotionTags:["fear","shame"],triggerTags:["belonging","impostor","rooms"],
+    setupSpiritual:"Even though my nervous system sometimes treats new spaces as threats, I choose to move through the world as someone who belongs everywhere — because I do.",
+    setupGrounded:"Even though I feel like an impostor in certain spaces, being new somewhere is not the same as not belonging.",
+    rounds:["This feeling of not quite belonging","The scan I do when I enter new spaces","Impostor energy that says I haven't earned this","The adjustment I make so I take up less","I was already invited — by my own courage in showing up","There is no room I'm categorically not allowed to be in","I belong wherever I am willing to be","I arrive. I stay. I take my place."],
+    journal:"Where do you most feel like an impostor — and what would it mean to belong there?",
+    action:"Go somewhere today where you feel like you don't fully belong. Order a coffee, take a seat, stay. Practice belonging."},
+
+  {id:"u6",category:"confidence",title:"Owning your opinion without needing it to be popular",forYou:"You have thoughts — real ones. And you've been softening them, qualifying them, or abandoning them when they weren't immediately validated.",duration:"10 min",intensity:"Medium-High",bodyLocation:"throat, chest",emotionTags:["fear","shame"],triggerTags:["opinion","voice","agreement"],
+    setupSpiritual:"Even though I've been waiting for my opinions to be validated before I hold them, my knowing is mine — I don't need a consensus to stand in it.",
+    setupGrounded:"Even though I like to be agreed with, an opinion doesn't require agreement to be valid.",
+    rounds:["This hedging I do before I share what I think","The qualifiers: 'maybe', 'I'm not sure but', 'this might be wrong'","Checking the room before I finish my thought","Abandoning my view when it's met with pushback","My opinion is not an audition — it's information","I can be wrong and have been. I still get to speak.","A disagreed-with opinion is still an opinion","I say what I think. Clearly. And stay there."],
+    journal:"What is a thought you've been hedging or qualifying that you actually believe quite clearly?",
+    action:"Share an opinion today without a single qualifier or softener. No 'maybe,' no 'just me though.' Own it."},
+
+  {id:"u7",category:"confidence",title:"Confidence in your body during intimacy",forYou:"In your most intimate moments, your body image takes over. You leave the moment to observe and critique yourself instead of being present. This tap brings you back.",duration:"12 min",intensity:"High",bodyLocation:"whole-body",emotionTags:["shame","fear"],triggerTags:["intimacy","presence","body-shame"],
+    setupSpiritual:"Even though I leave intimate moments to observe and critique my body, I practice coming back — into sensation, into presence, into myself.",
+    setupGrounded:"Even though body shame takes me out of the moment, the most attractive thing I can do is actually be there.",
+    rounds:["The way my mind goes to critique during intimacy","Observing myself from the outside instead of inhabiting the inside","The shame that shows up in those moments","Worrying about how I look instead of how I feel","I'm allowed to feel pleasure in this body","Presence is more magnetic than perfection","I come back into sensation","I'm here. Fully. This is mine."],
+    journal:"What would be different about intimate experiences if you were fully present in your body?",
+    action:"Practice body presence today outside of intimacy: a shower, a meal, a walk. Sensation first. Thought second."},
+
+  {id:"u8",category:"confidence",title:"Becoming someone who doesn't need to be chosen to feel okay",forYou:"You've been living in a state of waiting to be chosen — by a person, a job, a group — and your okayness depends on the outcome. This tap builds the other kind.",duration:"11 min",intensity:"High",bodyLocation:"heart, chest",emotionTags:["fear","shame"],triggerTags:["being-chosen","approval","self-approval"],
+    setupSpiritual:"Even though I've been waiting to be chosen before I fully give myself permission to be okay, I begin choosing myself — right now, before any external confirmation.",
+    setupGrounded:"Even though being chosen feels essential, the steadiness I'm looking for can only come from inside.",
+    rounds:["This waiting to be chosen","The specific person, opportunity, or group I'm waiting on","How my okayness is suspended until they decide","The exhaustion of living in this much suspense","I don't have to wait for anyone's choosing","I can choose myself — and that changes everything","The energy I give off when I'm already chosen (by me)","I choose myself. Now. Before the answer comes."],
+    journal:"What do you give yourself permission to feel or do only after someone chooses you? What would happen if you gave yourself that now?",
+    action:"Give yourself what you've been waiting to receive from being chosen. Today. Don't wait."},
+
+  {id:"u9",category:"confidence",title:"Radiating presence — becoming the woman who walks in and changes the room",forYou:"You're not just working on confidence — you're building presence. The kind that changes rooms. This tap is an activation.",duration:"10 min",intensity:"Medium",bodyLocation:"whole-body",emotionTags:["doubt"],triggerTags:["presence","radiance","magnetism"],
+    setupSpiritual:"Even though presence sometimes feels like something other people have, I activate mine — not by performing it, but by inhabiting myself so completely that it has no choice but to arrive.",
+    setupGrounded:"Even though I don't always feel magnetic, presence is a state I can access — it comes from being fully here.",
+    rounds:["Any residual smallness or dimming","The habit of entering without fully arriving","The performance of presence instead of the real thing","Presence borrowed from how I look vs how I inhabit myself","Real presence comes from fullness, not perfection","I'm the most magnetic when I'm the most myself","I let myself be felt in rooms","I walk in. I arrive. I'm here."],
+    journal:"Who is the most genuinely magnetic person you know — and what is it about them that creates that feeling?",
+    action:"Walk into your next environment with the specific intention of being fully present. Not impressive. Present."},
+
+  {id:"u10",category:"confidence",title:"Loving yourself with the love you keep giving everyone else",forYou:"You're generous, warm, and present for everyone — and you give yourself the scraps. This tap redirects some of that love inward.",duration:"12 min",intensity:"Medium",bodyLocation:"heart, whole-body",emotionTags:["grief","shame"],triggerTags:["self-love","giving","receiving"],
+    setupSpiritual:"Even though I give freely to everyone else and leave nothing for myself, I practice turning some of that love toward the one who needs it most — me.",
+    setupGrounded:"Even though I'm better at giving than receiving, giving to myself is not selfish. It's the source.",
+    rounds:["The love I give freely to everyone else","The way I am with people I care about — warm, patient, generous","The way I speak to and about myself — the contrast","The scraps I've been living on","I'm allowed to receive what I give","I speak to myself like someone I love","I am worthy of my own warmth","I turn some of this generosity toward myself — starting now"],
+    journal:"If you spoke to your best friend the way you speak to yourself, would she still be your friend?",
+    action:"Do one act of genuine care for yourself today — with the same quality of attention you give others."},
+
+  // ── FOR YOUR CLIENTS (10) ──
+];
+
+const CATEGORIES=[
+  {id:"all",label:"All Sessions",icon:"✦"},
+  {id:"safe-skin",label:"Safe in Your Skin",icon:"🌸"},
+  {id:"comparison",label:"Release Comparison",icon:"💗"},
+  {id:"validation",label:"Seek No Validation",icon:"💎"},
+  {id:"body-worth",label:"Body Image & Self-Worth",icon:"✨"},
+  {id:"confidence",label:"Unbreakable Confidence",icon:"👑"},
+
+];
+
+// ============================================================
+// STATE
+// ============================================================
+const S={
+  cat:"all",search:"",lang:"spiritual",prac:"self",
+  round:-1,session:null,guideActive:false,guideTimer:null,emergTimer:null,
+  quizStep:0,quizAnswers:{emotion:null,area:null,intensity:5,words:""},
+  customForm:{block:"",body:null,outcome:null},
+  favorites:JSON.parse(localStorage.getItem("hgnsr2_favs")||"[]"),
+  log:JSON.parse(localStorage.getItem("hgnsr2_log")||"[]"),
+  streak:0,lastShift:null,soundMode:"silent",dailyId:null
+};
+
+// ============================================================
+// PAGES
+// ============================================================
+function showPage(id){
+  document.querySelectorAll(".page").forEach(p=>p.classList.remove("active"));
+  document.getElementById("page-"+id).classList.add("active");
+  window.scrollTo({top:0,behavior:"smooth"});
+  if(id==="points")renderTapRef();
+  if(id==="log")renderLog();
+  if(id==="favorites")renderFavs();
+  if(id==="journal")renderJournal();
+  if(id==="home")renderDaily();
+}
+function scrollToLibrary(){showPage("home");setTimeout(()=>document.getElementById("library").scrollIntoView({behavior:"smooth"}),80);}
+function toggleMob(){document.getElementById("mobPanel").classList.toggle("open")}
+
+// ============================================================
+// FILTERS
+// ============================================================
+function renderFilters(){
+  const bar=document.getElementById("filterBar");
+  bar.innerHTML=CATEGORIES.map(c=>{
+    const cnt=c.id==="all"?SESSIONS.length:SESSIONS.filter(s=>s.category===c.id).length;
+    return `<button class="filter-btn ${c.id===S.cat?"active":""}" onclick="setFilter('${c.id}')">${c.icon} ${c.label}<span class="filter-count">${cnt}</span></button>`;
+  }).join("");
+}
+function setFilter(cat){S.cat=cat;renderFilters();renderSessions();}
+function handleSearch(){S.search=document.getElementById("searchInput").value.toLowerCase().trim();renderSessions();}
+
+function renderSessions(){
+  const grid=document.getElementById("sessionGrid");
+  let list=SESSIONS;
+  if(S.cat!=="all")list=list.filter(s=>s.category===S.cat);
+  if(S.search)list=list.filter(s=>(s.title+" "+s.forYou+" "+s.emotionTags.join(" ")+" "+s.triggerTags.join(" ")).toLowerCase().includes(S.search));
+  if(!list.length){grid.innerHTML=`<div class="empty-state" style="grid-column:1/-1"><div class="empty-ico">✦</div><h3>No sessions match</h3><p>Try a different filter or search.</p></div>`;return;}
+  grid.innerHTML=list.map(s=>{
+    const cat=CATEGORIES.find(c=>c.id===s.category);
+    const fav=S.favorites.includes(s.id);
+    return `<div class="session-card" onclick="openSession('${s.id}')">
+      <div class="card-head">
+        <span class="card-cat">${cat?.icon} ${cat?.label}</span>
+        <button class="fav-btn ${fav?"on":""}" onclick="event.stopPropagation();toggleFav('${s.id}')">
+          <svg viewBox="0 0 24 24" fill="${fav?"currentColor":"none"}" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </button>
+      </div>
+      <h3 class="card-title">${s.title}</h3>
+      <p class="card-desc">${s.forYou}</p>
+      <div class="card-meta"><span>⏱ ${s.duration}</span><span>⚡ ${s.intensity}</span><span>✦ ${s.bodyLocation.split(",")[0].trim()}</span></div>
+    </div>`;
+  }).join("");
+}
+
+function toggleFav(id){
+  const i=S.favorites.indexOf(id);if(i===-1)S.favorites.push(id);else S.favorites.splice(i,1);
+  localStorage.setItem("hgnsr2_favs",JSON.stringify(S.favorites));renderSessions();
+}
+
+// ============================================================
+// SESSION PLAYER
+// ============================================================
+function openSession(id){
+  const s=SESSIONS.find(x=>x.id===id);if(!s)return;
+  S.session=s;S.round=-1;S.lang="spiritual";S.prac="self";stopGuide();
+  const cat=CATEGORIES.find(c=>c.id===s.category);
+  document.getElementById("playerCat").textContent=`${cat?.icon} ${cat?.label} · ${s.duration}`;
+  document.getElementById("playerTitle").textContent=s.title;
+  document.getElementById("playerFor").textContent=s.forYou;
+  document.querySelectorAll("[data-mode]").forEach(b=>b.classList.toggle("active",b.dataset.mode==="spiritual"));
+  document.querySelectorAll("[data-prac]").forEach(b=>b.classList.toggle("active",b.dataset.prac==="self"));
+  document.getElementById("preRating").value=5;document.getElementById("preVal").textContent="5";
+  document.getElementById("postRating").value=5;document.getElementById("postVal").textContent="5";
+  const lb=document.getElementById("logBtn");lb.classList.remove("saved");lb.innerHTML=`<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Log this session`;lb.disabled=false;
+  const jr=document.getElementById("journalResponse");if(jr)jr.value="";
+  const sjb=document.getElementById("saveJournalBtn");if(sjb){sjb.classList.remove("saved");sjb.innerHTML=`<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/></svg> Save to journal`;sjb.disabled=false;}
+  renderPlayerContent();
+  document.getElementById("sessionModal").classList.add("open");
+}
+function closeSession(){document.getElementById("sessionModal").classList.remove("open");stopGuide();}
+
+function renderPlayerContent(){
+  const s=S.session;if(!s)return;
+  let setup=S.lang==="spiritual"?s.setupSpiritual:s.setupGrounded;
+  if(S.prac==="client")setup=clientify(setup);
+  typeSetup(`"${setup}"`);
+  const roundPts=["TH","EB","SE","UE","UN","CH","CB","UA"];
+  const cont=document.getElementById("roundsContainer");
+  cont.innerHTML=s.rounds.map((r,i)=>{
+    const code=roundPts[i]||"UA";
+    const tp=TAP_POINTS.find(p=>p.code===code);
+    let txt=r;if(S.prac==="client")txt=clientify(txt);
+    return `<div class="round" data-round="${i}" onclick="jumpTo(${i})">
+      <div class="round-pt">✦ ${tp?.name||code}</div>
+      <div class="round-txt">${txt}</div>
+    </div>`;
+  }).join("");
+  let journal=s.journal,action=s.action;
+  if(S.prac==="client"){journal="Ask your client: "+journal;action=s.practitionerNote?"Invite your client to: "+action.toLowerCase():"Suggest to your client: "+action.toLowerCase();}
+  document.getElementById("journalPrompt").textContent=`"${journal}"`;
+  document.getElementById("actionText").textContent=action;
+  document.getElementById("playerMapInfo").innerHTML=`<p style="color:var(--txt3);font-size:11px;font-style:italic">Active point lights up as you move through rounds. Tap any point to explore it.</p>`;
+}
+
+function clientify(t){
+  return t.replace(/\bEven though I\b/g,"Even though you")
+    .replace(/\bI\s+(am|feel|know|trust|choose|release|allow|honour|honor|can|will|anchor|return|reclaim|receive|rise|move|speak|lead|decide|let|teach|build|give|take|open|stay|hold|become|walk|act|claim|practice|begin|question)\b/g,"you $1")
+    .replace(/\bI\b/g,"you").replace(/\bmy\b/g,"your").replace(/\bme\b/g,"you")
+    .replace(/\bmyself\b/g,"yourself").replace(/\bI'm\b/g,"you're")
+    .replace(/\bI've\b/g,"you've").replace(/\bI'll\b/g,"you'll").replace(/\bmine\b/g,"yours");
+}
+
+document.addEventListener("click",e=>{
+  if(e.target.matches("[data-mode]")){document.querySelectorAll("[data-mode]").forEach(b=>b.classList.remove("active"));e.target.classList.add("active");S.lang=e.target.dataset.mode;renderPlayerContent();}
+  if(e.target.matches("[data-prac]")){document.querySelectorAll("[data-prac]").forEach(b=>b.classList.remove("active"));e.target.classList.add("active");S.prac=e.target.dataset.prac;renderPlayerContent();}
+});
+document.addEventListener("input",e=>{
+  if(e.target.id==="preRating")document.getElementById("preVal").textContent=e.target.value;
+  if(e.target.id==="postRating")document.getElementById("postVal").textContent=e.target.value;
+});
+
+// Player body click
+document.addEventListener("click",e=>{
+  if(e.target.matches("#playerBodySvg .tp")){
+    const code=e.target.dataset.point;const tp=TAP_POINTS.find(p=>p.code===code);
+    if(tp)document.getElementById("playerMapInfo").innerHTML=`<div class="map-info-name">${tp.name}</div><div class="map-info-meridian">${tp.meridian}</div><div class="map-info-body"><strong>Where:</strong> ${tp.body}<br><br>${tp.meaning}</div>`;
+  }
+});
+
+function jumpTo(i){S.round=i;highlightRound();}
+function nextRound(){
+  if(!S.session)return;
+  if(S.round<S.session.rounds.length-1){S.round++;highlightRound();}
+  else{stopGuide();document.getElementById("guideStatus").innerHTML="<strong>Session complete ✦</strong> Breathe. Rate where you are now.";}
+}
+function prevRound(){if(S.round>0){S.round--;highlightRound();}}
+
+function highlightRound(){
+  document.querySelectorAll(".round").forEach((r,i)=>{r.classList.remove("current","done");if(i<S.round)r.classList.add("done");if(i===S.round)r.classList.add("current");});
+  const roundPts=["TH","EB","SE","UE","UN","CH","CB","UA"];
+  document.querySelectorAll("#playerBodySvg .tp").forEach(p=>p.classList.remove("active"));
+  if(S.round>=0&&S.round<roundPts.length){
+    const code=roundPts[S.round];
+    document.querySelectorAll(`#playerBodySvg .tp[data-point="${code}"]`).forEach(p=>p.classList.add("active"));
+    const tp=TAP_POINTS.find(p=>p.code===code);
+    if(tp)document.getElementById("playerMapInfo").innerHTML=`<div class="map-info-name">${tp.name}</div><div class="map-info-meridian">${tp.meridian}</div><div class="map-info-body"><strong>Where:</strong> ${tp.body}<br><br>${tp.meaning}</div>`;
+    const cur=document.querySelector(`.round[data-round="${S.round}"]`);if(cur)cur.scrollIntoView({behavior:"smooth",block:"center"});
+  }
+  document.getElementById("prevBtn").disabled=S.round<=0;
+  document.getElementById("nextBtn").disabled=S.round>=(S.session?.rounds.length-1);
+  if(S.round>=0)document.getElementById("guideStatus").innerHTML=`<strong>Round ${S.round+1} of ${S.session.rounds.length}</strong> · Tap while you speak`;
+}
+
+function toggleGuide(){if(S.guideActive)stopGuide();else startGuide();}
+function startGuide(){
+  S.guideActive=true;document.getElementById("guideBar").classList.add("live");document.getElementById("guideBtn").textContent="⏸ Pause";
+  if(S.round<0)S.round=0;highlightRound();
+  S.guideTimer=setInterval(()=>{if(S.round<S.session.rounds.length-1){S.round++;highlightRound();}else{stopGuide();document.getElementById("guideStatus").innerHTML="<strong>Session complete ✦</strong> Rate where you are now.";}},7500);
+}
+function stopGuide(){
+  S.guideActive=false;if(S.guideTimer){clearInterval(S.guideTimer);S.guideTimer=null;}
+  const gb=document.getElementById("guideBar");if(gb)gb.classList.remove("live");
+  const btn=document.getElementById("guideBtn");if(btn)btn.textContent=S.round>=0?"▶ Resume":"Guide me →";
+}
+
+function logSession(){
+  const s=S.session;if(!s)return;
+  const pre=parseInt(document.getElementById("preRating").value);
+  const post=parseInt(document.getElementById("postRating").value);
+  const entry={id:s.id,title:s.title,category:s.category,emotionTags:s.emotionTags,triggerTags:s.triggerTags,pre,post,shift:pre-post,timestamp:Date.now()};
+  S.log.unshift(entry);if(S.log.length>200)S.log=S.log.slice(0,200);
+  localStorage.setItem("hgnsr2_log",JSON.stringify(S.log));
+  const lb=document.getElementById("logBtn");lb.classList.add("saved");lb.innerHTML=`<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Logged ✦`;lb.disabled=true;
+  S.lastShift={pre,post,title:s.title,id:s.id};
+  updateStreak();checkMilestones();
+  setTimeout(()=>openCelebration(pre,post,s.title),500);
+}
+
+function saveJournal(){
+  const jr=document.getElementById("journalResponse");if(!jr)return;
+  const txt=jr.value.trim();if(!txt||!S.session)return;
+  const entry={text:txt,prompt:S.session.journal,sessionTitle:S.session.title,sessionId:S.session.id,timestamp:Date.now()};
+  const journal=JSON.parse(localStorage.getItem("hgnsr2_journal")||"[]");
+  journal.unshift(entry);if(journal.length>500)journal.pop();
+  localStorage.setItem("hgnsr2_journal",JSON.stringify(journal));
+  const b=document.getElementById("saveJournalBtn");b.classList.add("saved");b.innerHTML=`<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Saved ✦`;b.disabled=true;
+}
+
+// ============================================================
+// QUIZ
+// ============================================================
+function openQuiz(){
+  S.quizStep=0;S.quizAnswers={emotion:null,area:null,intensity:5,words:""};
+  renderQuizStep();document.getElementById("quizModal").classList.add("open");
+}
+function closeQuiz(){document.getElementById("quizModal").classList.remove("open");}
+
+function renderQuizStep(){
+  const body=document.getElementById("quizBody");const total=4;const step=S.quizStep;
+  const dots=Array.from({length:total},(_,i)=>`<div class="quiz-dot ${i<=step?"done":""}"></div>`).join("");
+  if(step===0){
+    body.innerHTML=`<div class="quiz-prog">${dots}</div>
+      <h2 class="quiz-q">What's moving through you <em>right now?</em></h2>
+      <p class="quiz-hint">Pick what's closest to the actual feeling underneath everything.</p>
+      <div class="quiz-opts">
+        <button class="quiz-opt" onclick="answerQ('emotion','shame')"><span class="quiz-opt-ico">🌸</span>Shame · not enough · exposed</button>
+        <button class="quiz-opt" onclick="answerQ('emotion','fear')"><span class="quiz-opt-ico">🌊</span>Fear · anxiety · bracing</button>
+        <button class="quiz-opt" onclick="answerQ('emotion','grief')"><span class="quiz-opt-ico">💗</span>Grief · loss · mourning</button>
+        <button class="quiz-opt" onclick="answerQ('emotion','disconnection')"><span class="quiz-opt-ico">🌀</span>Disconnected · numb · not here</button>
+        <button class="quiz-opt" onclick="answerQ('emotion','anger')"><span class="quiz-opt-ico">🔥</span>Anger · resentment · unfair</button>
+        <button class="quiz-opt" onclick="answerQ('emotion','doubt')"><span class="quiz-opt-ico">✨</span>Doubt · second-guessing · lost</button>
+      </div>`;
+  }else if(step===1){
+    body.innerHTML=`<div class="quiz-prog">${dots}</div>
+      <h2 class="quiz-q">Where is it showing up <em>most?</em></h2>
+      <p class="quiz-hint">The area of your life where this is loudest right now.</p>
+      <div class="quiz-opts">
+        <button class="quiz-opt" onclick="answerQ('area','safe-skin')"><span class="quiz-opt-ico">🌸</span>My body · how I look · feeling safe in my skin</button>
+        <button class="quiz-opt" onclick="answerQ('area','comparison')"><span class="quiz-opt-ico">💗</span>Comparing myself to other women</button>
+        <button class="quiz-opt" onclick="answerQ('area','validation')"><span class="quiz-opt-ico">💎</span>Needing approval · seeking validation</button>
+        <button class="quiz-opt" onclick="answerQ('area','body-worth')"><span class="quiz-opt-ico">✨</span>Self-worth · feeling fundamentally not enough</button>
+        <button class="quiz-opt" onclick="answerQ('area','confidence')"><span class="quiz-opt-ico">👑</span>Confidence · presence · identity</button>
+        <button class="quiz-opt" onclick="answerQ('area','client-sessions')"><span class="quiz-opt-ico">🔮</span>With a client — practitioner work</button>
+      </div>`;
+  }else if(step===2){
+    body.innerHTML=`<div class="quiz-prog">${dots}</div>
+      <h2 class="quiz-q">How <em>loud</em> is it right now?</h2>
+      <p class="quiz-hint">0 = barely there. 10 = it's taken over everything.</p>
+      <div class="intensity-num" id="qIntNum">${S.quizAnswers.intensity}</div>
+      <input type="range" min="0" max="10" value="${S.quizAnswers.intensity}" class="int-slider" id="qInt" oninput="document.getElementById('qIntNum').textContent=this.value;S.quizAnswers.intensity=parseInt(this.value)"/>
+      <div class="int-marks"><span>0 · barely there</span><span>5 · noticeable</span><span>10 · taking over</span></div>
+      <button class="primary-btn" onclick="handleIntensity()">Continue →</button>`;
+  }else{
+    body.innerHTML=`<div class="quiz-prog">${dots}</div>
+      <h2 class="quiz-q">Say the <em>exact thing</em> you're believing right now.</h2>
+      <p class="quiz-hint">The more honest and specific you are, the more powerful the match. Write it raw — no editing, no spiritualising.</p>
+      <textarea class="quiz-textarea" id="qWords" rows="5" placeholder="e.g. I look at other women and feel like I'll never look like that and it's making me hate myself a little every day..."></textarea>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
+        <button class="secondary-btn" onclick="skipWords()" style="margin-top:0">Skip — just match me</button>
+        <button class="primary-btn" onclick="submitWords()" style="margin-top:0">Find my exact reset →</button>
+      </div>`;
+  }
+}
+
+function answerQ(field,value){S.quizAnswers[field]=value;S.quizStep++;renderQuizStep();}
+function handleIntensity(){S.quizAnswers.intensity=parseInt(document.getElementById("qInt").value);if(S.quizAnswers.intensity>=7){S.quizStep=3;renderQuizStep();}else showQuizResult();}
+function skipWords(){S.quizAnswers.words="";showQuizResult();}
+function submitWords(){S.quizAnswers.words=(document.getElementById("qWords")||{}).value||"";showQuizResult();}
+
+function showQuizResult(){
+  const{emotion,area,intensity,words}=S.quizAnswers;
+  let cands=SESSIONS.map(s=>{
+    let sc=0;
+    if(s.category===area)sc+=10;
+    if(s.emotionTags.includes(emotion))sc+=5;
+    if(words){
+      const w=words.toLowerCase(),h=(s.title+" "+s.forYou+" "+s.triggerTags.join(" ")+" "+s.rounds.join(" ")).toLowerCase();
+      ["mirror","photo","compare","comparison","body","worth","shame","hate","beautiful","love","enough","weight","age","validation","approval","confidence","seen","invisible"].forEach(kw=>{if(w.includes(kw)&&h.includes(kw))sc+=3;});
+    }
+    const si=s.intensity.toLowerCase();
+    if(intensity>=7&&si.includes("high"))sc+=2;if(intensity<4&&si.includes("medium"))sc+=1;
+    return{s,sc};
+  });
+  cands.sort((a,b)=>b.sc-a.sc);
+  const match=cands[0].s;const cat=CATEGORIES.find(c=>c.id===match.category);
+  document.getElementById("quizBody").innerHTML=`<div class="result">
+    <div class="result-ico">💗</div>
+    <div class="result-ew">Your Match</div>
+    <h2 class="result-h">The reset for <em>exactly this</em></h2>
+    <p class="result-sub">Based on what you just shared, this is the session that will move it most directly.</p>
+    <div class="result-session">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:11px;flex-wrap:wrap">
+        <span class="card-cat">${cat?.icon} ${cat?.label}</span>
+        <span style="font-family:var(--mono);font-size:10px;color:var(--txt3);letter-spacing:1.5px;text-transform:uppercase">⏱ ${match.duration}</span>
+      </div>
+      <h3 style="font-family:var(--serif);font-size:19px;font-weight:600;margin-bottom:8px;letter-spacing:-.2px;color:var(--txt)">${match.title}</h3>
+      <p style="color:var(--txt2);font-size:13px;line-height:1.6">${match.forYou}</p>
+    </div>
+    <button class="primary-btn" onclick="closeQuiz();openSession('${match.id}')">Start this reset ✦</button>
+    <button class="secondary-btn" onclick="closeQuiz();scrollToLibrary()">Browse all sessions</button>
+  </div>`;
+}
+
+// ============================================================
+// EMERGENCY RESET
+// ============================================================
+const EMERG=[
+  {pt:"Karate Chop",txt:"Even though I'm in it right now, I choose to come back to my body."},
+  {pt:"Top of Head",txt:"I release the spiral. I return to myself."},
+  {pt:"Eyebrow",txt:"It's safe to feel this. It's safe to let it move through me."},
+  {pt:"Side of Eye",txt:"I let go of what isn't mine to hold right now."},
+  {pt:"Under the Eye",txt:"I'm okay right now. I'm here right now."},
+  {pt:"Under the Nose",txt:"I exhale the shame. I inhale the calm."},
+  {pt:"Collarbone",txt:"My nervous system is softening. My breath is returning."},
+  {pt:"Under the Arm",txt:"I'm back. I'm here. I belong in this body."}
+];
+function openEmergency(){document.getElementById("emergOverlay").classList.add("open");startEmerg();}
+function closeEmergency(){document.getElementById("emergOverlay").classList.remove("open");if(S.emergTimer)clearInterval(S.emergTimer);}
+function startEmerg(){
+  let step=0;
+  const upd=()=>{const s=EMERG[step];document.getElementById("emergPt").textContent=s.pt;document.getElementById("emergTxt").textContent=`"${s.txt}"`;document.querySelectorAll("#emergProg span").forEach((d,i)=>d.classList.toggle("done",i<=step));};
+  upd();if(S.emergTimer)clearInterval(S.emergTimer);
+  S.emergTimer=setInterval(()=>{step=(step+1)%EMERG.length;upd();},22000);
+}
+
+// ============================================================
+// TAP REFERENCE PAGE
+// ============================================================
+function renderTapRef(){
+  const list=document.getElementById("tapRefList");
+  list.innerHTML=TAP_POINTS.map(tp=>`
+    <div class="tap-ref-item" data-code="${tp.code}" onclick="highlightRef('${tp.code}')">
+      <div class="tap-ref-head">
+        <div class="tap-ref-title">${tp.name}</div>
+        <span class="tap-ref-code">${tp.code}</span>
+      </div>
+      <div class="tap-ref-desc"><strong>Meridian:</strong> ${tp.meridian}</div>
+      <div class="tap-ref-desc" style="margin-top:4px"><strong>Where to tap:</strong> ${tp.body}</div>
+      <div class="tap-ref-meaning">${tp.meaning}</div>
+    </div>`).join("");
+}
+function highlightRef(code){
+  document.querySelectorAll(".tap-ref-item").forEach(el=>el.classList.remove("active"));
+  document.querySelectorAll(`.tap-ref-item[data-code="${code}"]`).forEach(el=>el.classList.add("active"));
+  document.querySelectorAll("#refBodySvg .tp").forEach(p=>p.classList.remove("active"));
+  document.querySelectorAll(`#refBodySvg .tp[data-point="${code}"]`).forEach(p=>p.classList.add("active"));
+  const tp=TAP_POINTS.find(p=>p.code===code);
+  if(tp)document.getElementById("refMapInfo").innerHTML=`<div class="map-info-name">${tp.name}</div><div class="map-info-meridian">${tp.meridian}</div><div class="map-info-body"><strong>Where:</strong> ${tp.body}<br><br>${tp.meaning}</div>`;
+}
+document.addEventListener("click",e=>{
+  if(e.target.matches("#refBodySvg .tp")){highlightRef(e.target.dataset.point);const item=document.querySelector(`.tap-ref-item[data-code="${e.target.dataset.point}"]`);if(item)item.scrollIntoView({behavior:"smooth",block:"center"});}
+});
+
+// ============================================================
+// DAILY
+// ============================================================
+function renderDaily(){
+  const seed=Math.floor(Date.now()/86400000);const ds=SESSIONS[seed%SESSIONS.length];
+  const cat=CATEGORIES.find(c=>c.id===ds.category);
+  document.getElementById("dailyTitle").innerHTML=`<em>${ds.title}</em>`;
+  document.getElementById("dailyDesc").textContent=ds.forYou;
+  document.getElementById("dailyMeta").innerHTML=`<span>${cat?.icon} ${cat?.label}</span><span>⏱ ${ds.duration}</span><span>⚡ ${ds.intensity}</span>`;
+  S.dailyId=ds.id;
+}
+function openDailySession(){if(S.dailyId)openSession(S.dailyId);}
+
+// ============================================================
+// LOG
+// ============================================================
+function renderLog(){
+  const cont=document.getElementById("logContent");const log=S.log;
+  if(!log.length){cont.innerHTML=`<div class="empty-state"><div class="empty-ico">✦</div><h3>No sessions logged yet</h3><p>Complete a session and tap "Log this session" to start building your pattern dashboard.</p><button class="primary-btn" onclick="scrollToLibrary()" style="margin-top:20px">Browse sessions</button></div>`;return;}
+  const streak=calcStreak(log);const avg=(log.reduce((s,e)=>s+e.shift,0)/log.length).toFixed(1);
+  const tagCounts={};log.forEach(e=>{[...e.emotionTags,...e.triggerTags].forEach(t=>{tagCounts[t]=(tagCounts[t]||0)+1;});});
+  const top=Object.entries(tagCounts).sort((a,b)=>b[1]-a[1]).slice(0,10);
+  cont.innerHTML=`<div class="log-stats">
+    <div class="log-stat"><div class="log-stat-lbl">Sessions logged</div><div class="log-stat-val">${log.length}</div></div>
+    <div class="log-stat"><div class="log-stat-lbl">Avg intensity shift</div><div class="log-stat-val">${avg>0?"-":""}${Math.abs(avg)}</div></div>
+    <div class="log-stat"><div class="log-stat-lbl">Current streak</div><div class="log-stat-val">${streak} day${streak===1?"":"s"}</div></div>
+  </div>
+  ${log.length>=3?`<div class="patterns-box"><h4>What keeps <em>coming up</em></h4><p style="color:var(--txt2);font-size:13px;margin-bottom:12px">After ${log.length} sessions, your recurring themes:</p><div>${top.map(([t,n])=>`<span class="ptag">${t} <span class="ptag-n">×${n}</span></span>`).join("")}</div></div>`:`<div class="patterns-box" style="opacity:.7"><h4>Your patterns appear <em>after 3 sessions</em></h4><p style="color:var(--txt2);font-size:13px">${3-log.length} more to unlock your dashboard.</p></div>`}
+  <h3 style="font-family:var(--serif);font-size:19px;font-weight:600;margin-bottom:13px;color:var(--txt)">Recent sessions</h3>
+  <div class="log-list">${log.slice(0,10).map(e=>{
+    const d=new Date(e.timestamp).toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric"});
+    const cat=CATEGORIES.find(c=>c.id===e.category);const drop=e.shift>0?"↓":(e.shift<0?"↑":"→");
+    return `<div class="log-entry"><div class="log-entry-l"><div class="log-entry-title">${e.title}</div><div class="log-entry-meta">${cat?.icon} ${cat?.label} · ${d}</div></div>
+      <div class="log-shift"><span class="log-sv">${e.pre}</span><span class="log-arr">${drop}</span><span class="log-sv">${e.post}</span>${e.shift>0?`<span class="log-drop">−${e.shift}</span>`:""}</div>
+    </div>`;
+  }).join("")}</div>`;
+}
+function calcStreak(log){
+  if(!log.length)return 0;const dates=[...new Set(log.map(e=>new Date(e.timestamp).toDateString()))];
+  const today=new Date().toDateString(),yest=new Date(Date.now()-86400000).toDateString();
+  if(!dates.includes(today)&&!dates.includes(yest))return 0;
+  let streak=0,check=dates.includes(today)?new Date():new Date(Date.now()-86400000);
+  while(dates.includes(check.toDateString())){streak++;check=new Date(check.getTime()-86400000);}return streak;
+}
+
+// ============================================================
+// FAVORITES + JOURNAL
+// ============================================================
+function renderFavs(){
+  const cont=document.getElementById("favContent");
+  if(!S.favorites.length){cont.innerHTML=`<div class="empty-state"><div class="empty-ico">💗</div><h3>No saved sessions yet</h3><p>Tap the heart on any session card to save it here.</p><button class="primary-btn" onclick="scrollToLibrary()" style="margin-top:20px">Browse sessions</button></div>`;return;}
+  const favs=S.favorites.map(id=>SESSIONS.find(s=>s.id===id)).filter(Boolean);
+  cont.innerHTML=`<div class="session-grid">${favs.map(s=>{const cat=CATEGORIES.find(c=>c.id===s.category);return `<div class="session-card" onclick="openSession('${s.id}')"><div class="card-head"><span class="card-cat">${cat?.icon} ${cat?.label}</span><button class="fav-btn on" onclick="event.stopPropagation();toggleFav('${s.id}');renderFavs()"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button></div><h3 class="card-title">${s.title}</h3><p class="card-desc">${s.forYou}</p><div class="card-meta"><span>⏱ ${s.duration}</span></div></div>`;}).join("")}</div>`;
+}
+
+function renderJournal(){
+  const journal=JSON.parse(localStorage.getItem("hgnsr2_journal")||"[]");
+  const cont=document.getElementById("journalContent");
+  if(!journal.length){cont.innerHTML=`<div class="empty-state"><div class="empty-ico">✦</div><h3>No journal entries yet</h3><p>After a session, write your reflection and save it here.</p></div>`;return;}
+  cont.innerHTML=journal.map(e=>{
+    const d=new Date(e.timestamp).toLocaleDateString("en-US",{weekday:"long",month:"short",day:"numeric",year:"numeric"});
+    return `<div class="journal-entry"><div class="journal-prompt">"${e.prompt}" · ${e.sessionTitle}</div><div class="journal-text">${e.text.replace(/&/g,"&amp;").replace(/</g,"&lt;")}</div><div class="journal-date">${d}</div></div>`;
+  }).join("");
+}
+
+// ============================================================
+// CELEBRATION
+// ============================================================
+function openCelebration(pre,post,title){
+  const shift=pre-post;
+  document.getElementById("snBefore").textContent=pre;document.getElementById("snAfter").textContent=post;
+  const dl=document.getElementById("shiftDrop");
+  if(shift>0){dl.textContent=`−${shift} Points`;dl.style.color="#3aa88a";}
+  else if(shift<0){dl.textContent=`+${Math.abs(shift)} — stay with it`;dl.style.color="var(--rose)";}
+  else{dl.textContent="The work continues";dl.style.color="var(--mauve)";}
+  const sf=document.getElementById("shiftFill"),sa=document.getElementById("shiftAfter");
+  sf.style.setProperty("--s",(pre/10).toFixed(2));sa.style.setProperty("--s",(pre/10).toFixed(2));sa.style.setProperty("--e",(post/10).toFixed(2));
+  sf.style.animation="none";sa.style.animation="none";void sf.offsetWidth;sf.style.animation="";sa.style.animation="";
+  const affirms=shift>=5?["You moved it. You're different than you were 10 minutes ago. Let yourself feel that.","That shift is real. Your body knows something it didn't know before.","This is how it works — not all at once, but one session at a time."]
+    :shift>=2?["Every shift compounds. Your nervous system is learning safety.","Something moved. That's what matters.","Healing isn't linear, but it is cumulative. You showed up."]
+    :["Sometimes tapping surfaces more before it settles. Honour what came up.","Not every session drops the number. Some sessions peel a layer instead.","The willingness is the practice. You showed up for yourself."];
+  document.getElementById("celAffirm").textContent=affirms[Math.floor(Math.random()*affirms.length)];
+  document.getElementById("celOverlay").classList.add("open");
+  if(shift>=3)fireConfetti();
+}
+function closeCelebration(){document.getElementById("celOverlay").classList.remove("open");}
+function fireConfetti(){
+  const colors=["#e879ba","#c084e8","#90c8e8","#90e0c8","#f8b8d8","#b8a0e0"];
+  for(let i=0;i<55;i++){
+    const p=document.createElement("div");p.className="confetti-p";
+    p.style.background=colors[Math.floor(Math.random()*colors.length)];
+    p.style.left=Math.random()*100+"vw";p.style.animationDuration=(2+Math.random()*2)+"s";p.style.animationDelay=Math.random()*.4+"s";
+    const sh=Math.random();if(sh<.33)p.style.borderRadius="50%";else if(sh<.66)p.style.transform="rotate(45deg)";
+    document.body.appendChild(p);setTimeout(()=>p.remove(),4500);
+  }
+}
+
+// ============================================================
+// STREAK
+// ============================================================
+function updateStreak(){
+  S.streak=calcStreak(S.log);
+  const badge=document.getElementById("streakBadge");
+  if(S.streak>0){badge.style.display="inline-flex";document.getElementById("streakCount").textContent=S.streak;}else badge.style.display="none";
+}
+const MILESTONES=[
+  {days:3,title:"✦ 3-Day Streak!",desc:"Your nervous system is learning safety."},
+  {days:7,title:"💗 7 Days!",desc:"A full week of choosing yourself."},
+  {days:14,title:"✨ 14 Days",desc:"Two weeks. The rewiring is real."},
+  {days:30,title:"👑 30 Days",desc:"A month. This is who you are now."}
+];
+function checkMilestones(){
+  const reached=MILESTONES.find(m=>S.streak===m.days);if(!reached)return;
+  const done=JSON.parse(localStorage.getItem("hgnsr2_milestones")||"[]");
+  if(!done.includes(reached.days)){done.push(reached.days);localStorage.setItem("hgnsr2_milestones",JSON.stringify(done));showMilestone(reached);}
+}
+function showMilestone(m){
+  const b=document.getElementById("milestoneBadge");
+  document.getElementById("milestoneTitle").textContent=m.title;document.getElementById("milestoneDesc").textContent=m.desc;
+  b.classList.add("show");fireConfetti();setTimeout(()=>b.classList.remove("show"),6000);
+}
+
+// ============================================================
+// CUSTOM TAP AI
+// ============================================================
+document.addEventListener("click",e=>{
+  if(e.target.closest("[data-body]")&&e.target.closest("#genForm")){const btn=e.target.closest("[data-body]");btn.parentElement.querySelectorAll(".quiz-opt").forEach(b=>b.classList.remove("sel"));btn.classList.add("sel");S.customForm.body=btn.dataset.body;checkGenReady();}
+  if(e.target.closest("[data-outcome]")&&e.target.closest("#genForm")){const btn=e.target.closest("[data-outcome]");btn.parentElement.querySelectorAll(".quiz-opt").forEach(b=>b.classList.remove("sel"));btn.classList.add("sel");S.customForm.outcome=btn.dataset.outcome;checkGenReady();}
+});
+document.addEventListener("input",e=>{if(e.target.id==="customBlock"){S.customForm.block=e.target.value.trim();checkGenReady();}});
+function checkGenReady(){document.getElementById("generateBtn").disabled=!(S.customForm.block.length>8&&S.customForm.body&&S.customForm.outcome);}
+
+async function generateCustomTap(){
+  document.getElementById("genForm").style.display="none";document.getElementById("genState").style.display="block";
+  const{block,body,outcome}=S.customForm;
+  const prompt=`You are writing a personalized EFT tapping script for the Hot Girl Nervous System Reset vault. Focus: helping women feel safe in their skin, release comparison, stop seeking validation, heal body image, and build unbreakable confidence through identity and embodiment work. Return ONLY raw JSON with no markdown fences.
+
+Her block: "${block}"
+Body sensation location: ${body}
+Desired outcome: ${outcome}
+
+Return JSON with:
+{
+  "title": "6-10 word title naming her exact block",
+  "forYou": "One sentence starting with 'You...' (max 22 words)",
+  "setupSpiritual": "Setup starting with 'Even though...' using soul language and HER specific words from her block description",
+  "setupGrounded": "Grounded version starting with 'Even though...' — practical, non-spiritual but emotionally intelligent",
+  "rounds": ["8 statements, one per tap point. First 4 name and amplify the block using her own language. Last 4 gently reframe toward ${outcome}. 6-14 words each. No clichés. No toxic positivity. Direct, real, feminine."],
+  "journal": "One specific reflective prompt that gets underneath the block — not generic",
+  "action": "One small, embodied action she can take in the next 24 hours"
+}
+
+Voice: emotionally intelligent, direct, feminine, magnetic, non-bypassing. Meets her exactly where she is before it asks her to move.`;
+
+  try{
+    const res=await fetch("https://api.anthropic.com/v1/messages",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({model:"claude-sonnet-4-20250514",max_tokens:1500,messages:[{role:"user",content:prompt}]})});
+    const data=await res.json();
+    const raw=data.content.map(c=>c.text||"").join("").trim().replace(/```json\n?/g,"").replace(/```\n?/g,"").trim();
+    const parsed=JSON.parse(raw);
+    const custom={id:"custom-"+Date.now(),category:"custom",title:parsed.title,forYou:parsed.forYou,duration:"10 min",intensity:"Custom",bodyLocation:body,emotionTags:["custom"],triggerTags:["custom"],setupSpiritual:parsed.setupSpiritual,setupGrounded:parsed.setupGrounded,rounds:parsed.rounds,journal:parsed.journal,action:parsed.action};
+    SESSIONS.push(custom);
+    if(!CATEGORIES.find(c=>c.id==="custom"))CATEGORIES.push({id:"custom",label:"Your Custom Tap",icon:"💗"});
+    document.getElementById("genState").style.display="none";document.getElementById("genForm").style.display="block";
+    document.getElementById("customBlock").value="";document.querySelectorAll("#genForm .quiz-opt").forEach(b=>b.classList.remove("sel"));
+    S.customForm={block:"",body:null,outcome:null};document.getElementById("generateBtn").disabled=true;
+    openSession(custom.id);
+  }catch(err){
+    document.getElementById("genState").innerHTML=`<div class="empty-state"><div class="empty-ico">⚠️</div><h3>Something went quiet</h3><p>Generation didn't come through. Try again.</p><button class="primary-btn" onclick="document.getElementById('genState').style.display='none';document.getElementById('genForm').style.display='block'" style="margin-top:18px">Try again</button></div>`;
+  }
+}
+
+// ============================================================
+// TYPEWRITER
+// ============================================================
+let twTimer=null;
+function typeSetup(text){
+  const el=document.getElementById("setupText");if(!el)return;
+  if(twTimer)clearTimeout(twTimer);el.textContent="";let i=0;
+  function t(){if(i<text.length){el.textContent+=text.charAt(i);i++;twTimer=setTimeout(t,20);}}t();
+}
+
+// ============================================================
+// AMBIENT SOUND
+// ============================================================
+let audioCtx=null,ambSrc=null,ambGain=null;
+function getCtx(){if(!audioCtx)audioCtx=new(window.AudioContext||window.webkitAudioContext)();return audioCtx;}
+function toggleSoundMenu(e){e.stopPropagation();document.getElementById("soundMenu").classList.toggle("open");}
+document.addEventListener("click",e=>{if(!e.target.closest(".sound-ctrl"))document.getElementById("soundMenu")?.classList.remove("open");});
+function setSound(type,e){
+  if(e)e.stopPropagation();stopAmbient();
+  document.querySelectorAll(".sound-opt").forEach(o=>o.classList.remove("active"));if(e?.target)e.target.classList.add("active");
+  document.getElementById("soundLbl").textContent=type==="silent"?"Silent":type.charAt(0).toUpperCase()+type.slice(1);
+  if(type!=="silent")startAmbient(type);S.soundMode=type;document.getElementById("soundMenu").classList.remove("open");
+}
+function startAmbient(type){
+  try{
+    const ctx=getCtx();if(ctx.state==="suspended")ctx.resume();
+    ambGain=ctx.createGain();ambGain.gain.value=0.04;ambGain.connect(ctx.destination);
+    if(type==="hum"){const o=ctx.createOscillator(),o2=ctx.createOscillator();o.type="sine";o2.type="sine";o.frequency.value=432;o2.frequency.value=216;o.connect(ambGain);o2.connect(ambGain);o.start();o2.start();ambSrc={o,o2};}
+    else if(type==="binaural"){const oL=ctx.createOscillator(),oR=ctx.createOscillator(),pL=ctx.createStereoPanner(),pR=ctx.createStereoPanner();pL.pan.value=-1;pR.pan.value=1;oL.frequency.value=200;oR.frequency.value=207;oL.connect(pL);pL.connect(ambGain);oR.connect(pR);pR.connect(ambGain);oL.start();oR.start();ambSrc={oL,oR};}
+    else if(type==="chimes"){ambSrc={iv:setInterval(()=>{const o=ctx.createOscillator(),g=ctx.createGain();o.frequency.value=[523,659,784,880,1047][Math.floor(Math.random()*5)];o.type="sine";g.gain.setValueAtTime(0,ctx.currentTime);g.gain.linearRampToValueAtTime(0.04,ctx.currentTime+.1);g.gain.exponentialRampToValueAtTime(.0001,ctx.currentTime+2);o.connect(g);g.connect(ambGain);o.start();o.stop(ctx.currentTime+2);},4500)};}
+    else if(type==="rain"){const buf=ctx.createBuffer(1,2*ctx.sampleRate,ctx.sampleRate),out=buf.getChannelData(0);for(let i=0;i<out.length;i++)out[i]=Math.random()*2-1;const n=ctx.createBufferSource();n.buffer=buf;n.loop=true;const f=ctx.createBiquadFilter();f.type="lowpass";f.frequency.value=1000;n.connect(f);f.connect(ambGain);ambGain.gain.value=0.07;n.start();ambSrc={n};}
+  }catch(e){}
+}
+function stopAmbient(){
+  if(!ambSrc)return;try{Object.values(ambSrc).forEach(s=>{if(s&&s.stop)s.stop();if(s&&s.disconnect)s.disconnect();});if(ambSrc.iv)clearInterval(ambSrc.iv);}catch(e){}
+  ambSrc=null;if(ambGain){ambGain.disconnect();ambGain=null;}
+}
+
+// ============================================================
+// THEME
+// ============================================================
+function toggleTheme(){
+  document.body.classList.toggle("night");const n=document.body.classList.contains("night");
+  localStorage.setItem("hgnsr2_theme",n?"night":"day");
+  const ico=document.getElementById("themeIco");
+  if(ico)ico.innerHTML=n?`<circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>`:`<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>`;
+}
+
+// ============================================================
+// PRINT + EMAIL
+// ============================================================
+function printSession(){
+  const s=S.session;if(!s)return;
+  const setup=S.lang==="spiritual"?s.setupSpiritual:s.setupGrounded;
+  const pts=TAP_POINTS.slice(1);
+  const html=`<!DOCTYPE html><html><head><meta charset="UTF-8"><title>${s.title}</title>
+    <style>@page{margin:.75in}body{font-family:Georgia,serif;max-width:680px;margin:20px auto;padding:20px;line-height:1.6;color:#2d1a35}h1{font-size:25px;color:#9b3a6a;margin-bottom:5px}h2{font-size:17px;color:#9b3a6a;margin-top:22px}.cat{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#b45a8a;margin-bottom:16px}.setup{background:#fdf0f7;padding:15px;border-left:3px solid #e879ba;font-style:italic;font-size:15px}.round{padding:8px 0;border-bottom:1px solid #f0e0ee;display:flex;gap:10px}.pt{font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#b45a8a;min-width:105px;font-weight:600}.int{background:#f8f0fa;padding:13px;margin-top:16px;border-radius:6px}.footer{margin-top:34px;text-align:center;font-size:10px;color:#999}.print-bar{position:fixed;top:0;left:0;right:0;background:#e879ba;color:white;padding:10px 18px;text-align:center;font-family:Helvetica,sans-serif;font-size:13px;z-index:9999}.print-bar button{background:white;color:#9b3a6a;border:none;padding:7px 18px;border-radius:20px;cursor:pointer;font-weight:600;margin-left:10px}@media print{.print-bar{display:none}body{margin:0}}</style></head><body>
+    <div class="print-bar">Ready to print <button onclick="window.print()">🖨 Print / Save PDF</button><button onclick="window.close()" style="background:transparent;color:white;border:1px solid white">Close</button></div>
+    <div style="margin-top:46px"></div>
+    <div class="cat">Hot Girl Nervous System Reset · ${s.duration}</div>
+    <h1>${s.title}</h1><p>${s.forYou}</p>
+    <div style="margin:18px 0"><div class="setup">"${setup}"<br><br><small>Tap the Karate Chop point while saying this 3 times.</small></div></div>
+    <h2>The Script</h2>
+    ${s.rounds.map((r,i)=>`<div class="round"><div class="pt">${pts[i]?.name||"Round "+(i+1)}</div><div>${r}</div></div>`).join("")}
+    <div class="int"><strong>Journal Prompt:</strong><br>"${s.journal}"</div>
+    <div class="int"><strong>Embodiment Practice:</strong><br>${s.action}</div>
+    <div class="footer">✦ Hot Girl Nervous System Reset · Safe in Your Skin · Unbreakable in Your Worth</div>
+    </body></html>`;
+  try{
+    const blob=new Blob([html],{type:"text/html"}),url=URL.createObjectURL(blob);
+    const opened=window.open(url,"_blank");
+    if(!opened||opened.closed){const a=document.createElement("a");a.href=url;a.download=`${s.title.replace(/[^a-z0-9]/gi,"-").toLowerCase()}.html`;document.body.appendChild(a);a.click();document.body.removeChild(a);}
+    setTimeout(()=>URL.revokeObjectURL(url),60000);
+  }catch(err){
+    navigator.clipboard.writeText(`${s.title}\n\n${s.forYou}\n\nSetup (say 3×): "${setup}"\n\n${s.rounds.map((r,i)=>`${pts[i]?.name||"Round "+(i+1)}: ${r}`).join("\n")}\n\nJournal: "${s.journal}"\nPractice: ${s.action}`).then(()=>showToast("Script copied to clipboard")).catch(()=>showToast("Open in browser to print"));
+  }
+}
+function emailSession(){
+  const s=S.session;if(!s)return;
+  const setup=S.lang==="spiritual"?s.setupSpiritual:s.setupGrounded;
+  window.location.href=`mailto:?subject=${encodeURIComponent("Tapping script: "+s.title)}&body=${encodeURIComponent(`${s.title}\n\n${s.forYou}\n\nSetup (say 3×): "${setup}"\n\n${s.rounds.map((r,i)=>`${i+1}. ${r}`).join("\n")}\n\nJournal: "${s.journal}"\nPractice: ${s.action}\n\n—\nHot Girl Nervous System Reset`)}`;
+}
+function showToast(msg){
+  const t=document.createElement("div");t.style.cssText="position:fixed;bottom:26px;left:50%;transform:translateX(-50%);background:rgba(45,26,53,.96);color:#fff;padding:12px 20px;border-radius:12px;font-family:DM Sans,sans-serif;font-size:13px;z-index:9999;max-width:88%;text-align:center;border:1px solid rgba(232,121,186,.4);box-shadow:0 10px 36px rgba(100,50,120,.2)";t.textContent=msg;document.body.appendChild(t);setTimeout(()=>{t.style.opacity="0";t.style.transition="opacity .5s"},3500);setTimeout(()=>t.remove(),4200);
+}
+
+// ============================================================
+// KEYBOARD
+// ============================================================
+document.addEventListener("keydown",e=>{
+  if(e.key==="Escape"){closeQuiz();closeSession();closeEmergency();}
+  if(document.getElementById("sessionModal").classList.contains("open")&&e.target.tagName!=="INPUT"&&e.target.tagName!=="TEXTAREA"){
+    if(e.key==="ArrowRight")nextRound();if(e.key==="ArrowLeft")prevRound();
+    if(e.key===" "){e.preventDefault();toggleGuide();}
+  }
+});
+document.addEventListener("click",e=>{
+  if(e.target.id==="quizModal")closeQuiz();if(e.target.id==="sessionModal")closeSession();
+});
+
+// ============================================================
+// INIT
+// ============================================================
+function init(){
+  renderFilters();renderSessions();renderDaily();updateStreak();
+  if(localStorage.getItem("hgnsr2_theme")==="night")toggleTheme();
+}
+window.addEventListener("DOMContentLoaded",init);
+if(document.readyState!=="loading")init();
+</script>
+</body>
+</html>
